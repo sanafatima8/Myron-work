@@ -123,7 +123,7 @@ export default function Work() {
 
 
 <div className="work--section--img">
-          <img src="./img/image.jpeg" alt="work Section"  className="small-image"/>
+          <img src="./img/myron.png" alt="work Section"  className="small-image"/>
           <div className="horizontal--banner"><span className="three-plus">3+</span>
                <br /> 
                 <span className="ex-text"> Year Of Experience</span>
