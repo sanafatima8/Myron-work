@@ -50,9 +50,25 @@ export default function Work() {
           </div>
         </div>
 
-{/*       
 
-     <div class='hori-con'>
+<div className="work--section--img">
+{/* <img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""  className="small-image"/> */}
+
+          <img  src="./img/last image.jpg"  alt="work Section"  className="small-image"/>
+          <div className="horizontal--banner"><span className="three-plus">3+</span>
+               <br /> 
+                <span className="ex-text"> Year Of Experience</span>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+
+
+  {/*       
+
+  <div class='hori-con'>
   <div class="hori-dots">
     <div class="dot-row">
       <span class="dot-w"></span>
@@ -121,16 +137,3 @@ export default function Work() {
    </div>
 </div> */}
 
-
-<div className="work--section--img">
-{/* <img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""  className="small-image"/> */}
-
-          <img  src="./img/last image.jpg"  alt="work Section"  className="small-image"/>
-          <div className="horizontal--banner"><span className="three-plus">3+</span>
-               <br /> 
-                <span className="ex-text"> Year Of Experience</span>
-          </div>
-        </div>
-      </section>
-    );
-  }
