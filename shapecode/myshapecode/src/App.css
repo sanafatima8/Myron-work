@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 
   
 }
@@ -1605,7 +1605,7 @@ line-height: 30px;
      @media screen and (min-width: 360px) and (max-width: 800px) {
       .timeline {
         left: 20px!important;
-        height: 1050%!important;
+        height: 1000%!important;
       }
 
       .study--section--content{
@@ -2300,8 +2300,8 @@ margin-left: 10px!important;
 @media screen and (min-width: 360px) and (max-width: 800px) {
   .client-title{
     color: white;
-    font-size: 8px;
-    width: 150%;
+    font-size: 20px!important;
+    width: 140%;
     margin-left: -50px;
     font-weight: 700;
     line-height: 66px;
@@ -2313,9 +2313,9 @@ margin-left: 10px!important;
     max-width: max-content;
     padding: 3px 10px;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
-    line-height:55px;
+    line-height:44px;
     
 
 }
