@@ -1,0 +1,3299 @@
+/* Global CSS */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: "Roboto", sans-serif;
+  -moz-osx-font-smoothing: "Roboto", sans-serif;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+:root {
+  --primary: #5e3bee;
+  --heading-color: #282938;
+  --bg-shade: #f5fcff;
+  --github: #e62872;
+  --darkblue: #1c1e53;
+  --black: #000000;
+  --white: #ffffff;
+}
+.btn {
+  font-family: "Roboto";
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  height: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+.btn-outline-primary {
+  color: var(--white);
+  background: linear-gradient(265deg, rgba(244,210,145,1) 0%, rgba(160,118,50,1) 53%);
+   /* border: 1px solid var(--primary); */
+}
+.btn-outline-primary:hover {
+  color: black;
+  background-color: var(--primary);
+}
+
+.btn-github {
+  color: var(--white);
+  background-color: var(--github);
+  border: var(--github);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
+  gap: 16px;
+}
+.btn-github:hover {
+  color: var(--github);
+  background-color: var(--white);
+}
+/* Global CSS Ends */
+/* Main Headings */
+
+/* Heading 1 */
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67px;
+}
+/* Heading 2 */
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+/* Heading 3 */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/* Pragraphs text large medium small */
+/* Body 1 */
+.text-lg {
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+/* Body 2 */
+.text-md {
+  color:white;
+  font-size: 16px;
+  font-style: normal;
+  
+  font-weight: 400;
+  line-height: 24px;
+}
+.text-msg-md{
+  color:white;
+  font-size: 16px;
+  font-style: normal;
+  margin-top:20px ;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact--input::placeholder {
+  color: #999; /* Placeholder text color */
+   
+}
+/* Body 3 */
+.text-sm {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* Section Titles */
+/* Skills & About Me */
+.section--title {
+  color: var(--heading-color);
+  font-size: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+/* Portfolio, Testimonial & Contact Me */
+.sub--title {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* Section Titles Ends */
+
+/* Navbar Style Start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 85.333px;
+  background: #2b2622;
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 5px solid goldenrod; /* Set the color of the line */
+ 
+    z-index: 1000; /* Adjust the value based on your design and other z-index values */
+  
+}
+.navbar--items > ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 42.667px;
+
+}
+.navbar--items ul > li > a {
+  text-decoration: none;
+
+}
+
+
+/* Navbar Content */
+.navbar--content {
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  
+}
+/* Styles for the active navbar item with gradient text and fixed underline */
+.navbar--active-content {
+  position: relative;
+  background: linear-gradient(265deg, rgba(244,210,145,1) 0%, rgba(160,118,50,1) 53%);
+  color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+
+/* Create a fixed underline using ::after pseudo-element */
+.navbar--active-content::after {
+  content: "";
+  position: absolute;
+  bottom: -3px; /* Adjust this value to control the distance of the underline from the text */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: goldenrod;
+}
+
+/* Styles for the active navbar item on hover */
+.navbar--active-content:hover::after {
+  background-color: goldenrod;
+}
+
+/* Navbar Styler Ends */
+
+/* Hero Section Style */
+.hero--section {
+ 
+  
+  padding: 133.333px 85.333px 133.333px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  background: #2b2622;
+}
+.hero--section--content-box {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+ 
+}
+.hero--section--content {
+  text-align: center;
+}
+
+.hero--section--title {
+  margin-top: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+
+ 
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 70px;
+}
+
+.btn-work {
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #474641;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  max-width: 200px;
+  text-decoration: none;
+}
+
+
+
+.hero--section--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+}
+
+.hero--section--img > img {
+  max-width: 70%; /* Adjust the width as needed */
+  max-height: 70vh; /* Adjust the height as needed */
+  width: auto;
+  height: auto;
+  border-radius: 3rem;
+  margin-top: 30px;
+}
+.hero--section--title {
+ margin-top: 50px;
+}
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .hero--section {
+    flex-direction: column;
+  }
+
+  .hero--section--img {
+    order: 2; /* Move the image to the bottom in mobile view */
+  }
+
+  .hero--section--content-box {
+    order: 1; /* Move the content box to the top in mobile view */
+  }
+
+  .hero--section--title {
+    margin-top: 20px; /* Adjust the margin for mobile */
+  }
+  .btn-work {
+    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #474641;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -100px;
+    max-width: 200px;
+    text-decoration: none;
+  }
+}
+/* Missing closing curly brace here */
+
+@media screen and (min-width: 390px) and (max-width: 844px) {
+
+  .hero--section--title {
+    margin-top: 20px; /* Adjust the margin for mobile */
+    font-size: 19.1px!important;
+  
+  }
+}
+
+/* Hero Section Style Ends */
+
+/* Work Section Style */
+/* Work Section Style */
+.work--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 10%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: #2b2622;
+}
+
+.work--section--content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.work--section--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333px;
+}
+
+.work--section--content--box > button {
+  margin-top: 21.333px;
+}
+
+.work--title {
+  color: goldenrod;
+  font-size: 2rem;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.work--section--title {
+  color: var(--heading-color);
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  align-self: stretch;
+  color: white;
+}
+
+.work--Ambition {
+  color: white;
+  font-weight: 800;
+}
+
+.work--ambition-description,
+.work--purpose-description {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.3rem;
+ 
+}
+/* Add this media query to apply styles only for mobile screens */
+@media (max-width: 767px) {
+  .work--ambition-description,
+  .work--purpose-description {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    overflow-wrap: break-word; /* Allow long words to be broken and wrap to the next line */
+    margin-right: auto; /* Center the paragraphs */
+    margin-left: auto;
+  }
+
+}
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+  .work--ambition-description,
+  .work--purpose-description {
+    max-width: 80%; /* Adjust the maximum width as needed */
+    overflow-wrap: break-word; /* Allow long words to be broken and wrap to the next line */
+    margin-right: auto; /* Center the paragraphs */
+    margin-left: 6px; /* Center the paragraphs */
+  }
+}
+
+
+
+.work--Purpose {
+  color: white;
+  font-weight: 800;
+}
+
+.work--section--img {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-image {
+  height: auto !important;
+  width: auto;
+  margin-top: -10rem; /* Adjust as needed */
+}
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .work--section--img {
+    flex-direction: column; /* Stack items vertically for mobile */
+  }
+
+  .small-image {
+    margin-top: 0; /* Remove the negative margin on mobile */
+  }
+
+  .horizontal--banner {
+    width: 100%; /* Full width for mobile screens */
+    height: auto; /* Auto height based on content */
+    text-align: center; /* Center the content in mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .horizontal--banner:before {
+    content: "Frontend Developer and Designer"; /* Replace with your desired content */
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+   
+   
+  }
+  /* Hide the original content on mobile */
+  .horizontal--banner .three-plus,
+  .horizontal--banner .ex-text {
+    display: none;
+  }
+}
+
+
+/* Horizontal Banner */
+.horizontal--banner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 130px;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  align-items: center;
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Animation keyframes */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.three-plus {
+  font-weight: 900;
+  margin-left: 10%;
+  font-size: 5vw;
+  color: white;
+}
+
+.ex-text {
+  margin-left: 10%;
+  font-size: 1.7vw;
+  color: white;
+}
+
+.work--section--img > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .work--section {
+    grid-template-columns: 1fr;
+    padding: 5% 5%;
+  }
+
+  .small-image {
+    margin-top: -1rem; /* Adjust as needed */
+  }
+
+  .hori-con,
+  .v-con {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+/* Dots Styles */
+.hori-con,
+.v-con {
+  text-align: center;
+}
+
+.dot-row {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: row;
+  width: 160px;
+}
+
+.dot-w {
+  height: 10px;
+  width: 10px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.dot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Skills Section Style */
+.skills--section {
+  background: #2b2622;
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 106.667px;
+}
+
+.portfolio-container {
+    text-align: center;
+}
+
+.section-title{
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+ 
+
+
+}
+
+.skill-text {
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 3px 10px;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Start position outside the left edge */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End position at the original position */
+    opacity: 1;
+  }
+}
+
+
+
+.skills--section--para {
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 40px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .skill-text {
+    font-size: 40px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .skills--section--para {
+    font-size: 16px; /* Adjust the font size for mobile screens */
+    line-height: 24px; /* Adjust the line height for mobile screens */
+  }
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+
+  .section-title {
+    font-size: 35px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .skill-text {
+    font-size: 35px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+}
+
+
+
+.skills--section--container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 42.6px;
+ 
+  grid-template-columns: repeat(2, 1fr);
+}
+.skills--section--card {
+  display: flex;
+  padding: 32px;
+ 
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex: 1 0 0;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+
+  background: #474641;
+  /* background: var(--bg-shade); */
+  min-height: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
+
+  
+
+}
+
+.skills--section--card:hover {
+  transform: scale(0.9); /* Scale down */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #FFD700, #CD853F); /* Gradient color */
+  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+}
+
+
+.skills--section--card:hover .skills--section--description {
+  color: goldenrod;
+}
+.skills--section--img {
+  display: flex;
+  padding: 13.3px;
+  justify-content: center;
+  align-items: center;
+  gap: 13.3px;
+  border-radius: 10.6px;
+  background: #2b2622;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}   
+.skills--section--card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  
+}
+.skills-title {
+  color: white;
+   font-size: 35px;
+  font-weight: 900;
+  line-height: 45px;
+  align-items: center;
+}
+.skills-description {
+  color: gray;
+  font-size: 17.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 350px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text and leave margins from both sides */
+}
+.button-for-id-2,
+.button-for-id-1 {
+  color: goldenrod;
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 32px;
+  max-width: 350px; /* Adjust the max-width as needed */
+  border-radius: 10rem;
+  /* by adding background-color 10rem 2px will create leave pattern  */
+  text-decoration: none;
+  border: 1px solid goldenrod; /* Set the border for all sides */
+  cursor: pointer;
+  background-color: #474641;
+  margin: 0 auto; /* Center the text and leave margins from both sides */
+}
+.button-for-id-2:hover,
+.button-for-id-1:hover {
+  border: 1px solid goldenrod; /* Set the border for all sides on hover state */
+   color: white;
+   background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+
+}
+
+/* Skills Style Ends */
+
+/* About Us */
+.about--section {
+ 
+  grid-template-columns: repeat(2, 1fr);
+
+    background: #2b2622;
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 16.667px;
+}
+
+
+.portfolio-about-container {
+  text-align: center;
+}
+
+.about-title{
+color: white;
+font-size: 60px;
+font-weight: 700;
+line-height: 77px;
+margin-bottom: 10px; 
+text-align: center!important;
+position: relative;
+overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+.about-text {
+background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+max-width: max-content;
+padding: 3px 10px;
+color: white;
+font-size: 60px;
+font-weight: 700;
+line-height: 77px;
+text-align: center !important;
+display: inline-block; /* Make it an inline block to use text-align */
+white-space: nowrap; /* Prevent line breaks */
+animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
+opacity: 0; /* Initially set opacity to 0 */
+}
+
+@keyframes slideInFromLeft {
+0% {
+  transform: translateX(-100%); /* Start position outside the left edge */
+  opacity: 0;
+}
+100% {
+  transform: translateX(0); /* End position at the original position */
+  opacity: 1;
+}
+}
+
+
+
+.about--section--para {
+color: gray;
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+max-width: 800px; /* Adjust the max-width as needed */
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+
+@media (max-width: 767px) {
+  .about-title {
+    font-size: 40px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .about-text {
+    font-size: 40px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .about--section--para {
+    font-size: 16px; /* Adjust the font size for mobile screens */
+    line-height: 24px; /* Adjust the line height for mobile screens */
+    text-align: center; /* Center the text within the paragraph */
+    max-width: 400px; /* Set a maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+
+.col-one {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 5px;
+  display: flex;
+color: #ccc;
+  justify-content: space-between;
+}
+/* !important */
+.columns-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.column-left,
+.column-right {
+  width: 400px; /* Adjust the width and margin as needed */
+  padding: 20px;
+  background: #2b2622;
+  
+  border-radius: 8px; /* Optional: Add rounded corners */
+   
+}
+
+.column-left {
+  margin-right: 20px; /* Margin to separate the columns */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .about--section {
+    padding: 50px 20px; /* Adjust padding for responsiveness */
+  }
+
+  .columns-container {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center;
+  }
+
+  .column-left {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+  .column-right {
+    margin-left: 0; /* Remove right margin for smaller screens */
+    margin-top: 10px;
+  }
+}
+
+.boxes-container {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+.box-l {
+  margin-right: 200px;
+  margin-top: 10px;
+  height: 100px; /* Adjust the height as needed */
+  width: 200px; /* Adjust the width as needed */
+  background: #474641;
+  margin-bottom: 10px; /* Adjust the margin between boxes */
+  border-radius: 1rem;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+.box-l:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+
+.box {
+  margin-top: 10px;
+  height: 100px; /* Adjust the height as needed */
+  width: 450px; /* Adjust the width as needed */
+  background: #474641;
+  margin-bottom: 10px; /* Adjust the margin between boxes */
+  border-radius: 1rem;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
+}
+.box-heading{
+  color: whitesmoke;
+margin-left: -80px;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box-heading-l{
+  color: whitesmoke;
+
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.progress-container {
+  position: relative;
+ 
+}
+
+.pro-f {
+  appearance: none;
+  height: 7px; /* Adjust the height as needed */
+  width: 70%; /* Make it full width */
+  border-radius: 10px; /* Adjust the border radius as needed */
+  position: absolute;
+ margin-top: 7px;
+ margin-left: 8px;
+  left: 0; /* Move the progress bar to the left */
+  transform: translate(0, -50%);
+  animation: progressBarAnimation 2s ease-in-out forwards;
+
+}
+
+
+.pro-f::-webkit-progress-bar {
+  background-color: #ddd; /* Background color of the progress bar */
+  border-radius: 10px; /* Match the border radius of the progress bar */
+
+}
+
+.pro-f::-webkit-progress-value {
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  border-radius: 10px; /* Match the border radius of the progress bar */
+ 
+}
+@keyframes progressBarAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+.progress-text {
+  position: absolute;
+  font-size: 13.5px;
+  margin-top: 8px;
+  left: 85%;
+  font-weight: 300;
+  transform: translate(-50%, -50%);
+  color: white; /* Change the color of the progress value */
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 50px;
+  margin-left: 10px;
+}
+.circle-image {
+  width: 40px; /* Original width of the image */
+  height: 90px; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 20px;
+  margin-right: 10px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+.text-after-circle {
+  margin-left: -10px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 20px;
+  color: white;
+
+}
+.a-one{
+  margin-left: 10px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 20px;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 3px 10px;
+  color: white;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+
+}
+.circle-app-container {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+  margin-left: -1px;
+  
+}
+.circle-app-image {
+  width: 70px; /* Original width of the image */
+  height: 39px; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 20px;
+  margin-right:-50px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.text-after-app-circle {
+  margin-left: 40px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 20px;
+  color: white;
+
+}
+
+.circle-ai-container {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+  margin-left: 10px;
+  
+}
+.circle-ai-image {
+  width: 70px; /* Original width of the image */
+  height: 39px; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 20px;
+  margin-right:-30px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.text-after-ai-circle {
+  margin-left: 40px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 20px;
+  color: white;
+
+}
+
+.circle-aws-container {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+  margin-left: -1px;
+  
+}
+.circle-aws-image {
+  width: 70px; /* Original width of the image */
+  height: 39px; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 20px;
+  margin-right:-50px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.text-after-aws-circle {
+  margin-left: 40px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 20px;
+  color: white;
+
+}
+.circle-shopify-container {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+  margin-left: -1px;
+  
+}
+.circle-shopify-image {
+  width: 70px; /* Original width of the image */
+  height: 39px; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 20px;
+  margin-right:-50px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.text-after-shopify-circle {
+  margin-left: 40px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 20px;
+  color: white;
+
+}
+.circle-flow-container {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 30%;
+  margin-left: -1px;
+  
+}
+.circle-flow-image {
+  width: 70px; /* Original width of the image */
+  height: 60px; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: 6px;
+  margin-right:-50px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.text-after-flow-circle {
+  margin-left: 30px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 2px;
+  color: white;
+
+}
+.a-flow-one{
+  margin-left: 10px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: 2px;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 3px 10px;
+  color: white;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+
+}
+
+.circle-dart-container {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 100px;
+  margin-left: -1px;
+  
+}
+.circle-dart-image {
+  width: 100%; /* Original width of the image */
+  height: 300%; /* Original height of the image */
+  border-radius: 50%; /* Make the image round */
+  margin-top: -30px;
+  margin-right:1px; /* Adjust the margin to space the text from the image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+.text-after-dart-circle {
+  margin-left: -10px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: -20px;
+  color: white;
+
+}
+.a-dart-one{
+  margin-left: 10px; /* Adjust the margin to space the text from the circle */
+  font-size: 15px; /* Adjust the font size of the text */
+  margin-top: -20px;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 3px 10px;
+  color: white;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+
+}
+
+
+/* colum right starts */
+.column-right {
+  margin-left: 20px; /* Margin to separate the columns */
+}
+/* Media Query for Mobile */
+@media (max-width: 767px) {
+  .columns-container {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center;
+  }
+
+  .column-left,
+  .column-right {
+    width: 100%; /* Make columns take full width on mobile screens */
+    margin: 0; /* Remove margin to avoid spacing issues on mobile */
+  }
+
+  .boxes-container {
+    flex-direction: column; /* Arrange boxes in a single column on mobile */
+  }
+
+  .box
+   {
+    width: 100%; /* Make boxes take full width on mobile screens */
+  }
+  .box-l {
+    width: 100%; /* Make boxes take full width on mobile screens */
+    margin-right: 10px;
+  }
+}
+
+
+
+/* About Us Ends */
+
+
+
+/* study  starts*/
+.study--section {
+ 
+  grid-template-columns: repeat(2, 1fr);
+
+    background: #2b2622;
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 16.667px;
+}
+
+
+.portfolio-study-container {
+  text-align: center;
+}
+
+.study-title{
+color: white;
+font-size: 60px;
+font-weight: 700;
+line-height: 77px;
+margin-bottom: 10px; 
+text-align: center!important;
+position: relative;
+overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+.study-text {
+background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+max-width: max-content;
+padding: 3px 10px;
+color: white;
+font-size: 60px;
+font-weight: 700;
+line-height: 77px;
+text-align: center !important;
+display: inline-block; /* Make it an inline block to use text-align */
+white-space: nowrap; /* Prevent line breaks */
+animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
+opacity: 0; /* Initially set opacity to 0 */
+}
+
+@keyframes slideInFromLeft {
+0% {
+  transform: translateX(-100%); /* Start position outside the left edge */
+  opacity: 0;
+}
+100% {
+  transform: translateX(0); /* End position at the original position */
+  opacity: 1;
+}
+}
+
+
+
+.study--section--para {
+color: gray;
+font-size: 20px;
+font-weight: 300;
+line-height: 30px;
+max-width: 800px; /* Adjust the max-width as needed */
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+
+@media (max-width: 767px) {
+  .study-title {
+    font-size: 40px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .study-text {
+    font-size: 40px; /* Adjust the font size for mobile screens */
+    line-height: 50px; /* Adjust the line height for mobile screens */
+  }
+
+  .study--section--para {
+    font-size: 16px; /* Adjust the font size for mobile screens */
+    line-height: 24px; /* Adjust the line height for mobile screens */
+    text-align: center; /* Center the text within the paragraph */
+    max-width: 400px; /* Set a maximum width for better readability */
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+
+
+
+
+.timeline {
+  margin-top: 100px;
+  width: 8px;
+  height: 600%;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  border-radius: 50px;
+  transform: translateX(-50%);
+}
+
+
+
+
+
+.study-section-content-box {
+  margin-top: 100px;
+  width: 45%;
+  margin: 20px; /* Adjust the margin to create space */
+  padding: 20px;
+  position: relative;
+  
+  animation: fadeIn 1s ease forwards;
+  transition: transform 0.3s ease; /* Added transition for smooth scaling */
+}
+
+.study-section-content-box:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+.study-section-content-box.left {
+  float: left;
+  
+
+}
+
+.study-section-content-box.right {
+  float: right;
+  margin-top: -400px;
+ 
+}
+
+
+
+.study--section--content {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333px;
+}
+
+
+
+.study-year{
+  color: white;
+}
+.study-place {
+  color: goldenrod;
+  width: 260px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  align-self: stretch;
+  
+}
+.study-result{
+  color: white;
+  font-weight: 500;
+}
+.study--detail {
+ 
+
+
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  width: 500px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 768px){
+/*Study story css */
+
+.study-story{
+ margin-top: 100px;
+  border-radius: 2rem;
+ 
+  width: 100%; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  text-align: center;
+  background-image: url('..//public/img/story.jpeg');
+  background-size: cover; /* Adjust the size to cover the entire section */
+  background-position: center; /* Adjust the position if needed */
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.study-story::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+}
+
+.study-story-content{
+  margin-top: 100px;
+   color:white;
+   border-radius: 2rem;
+   width: 90%; /* Adjust the max-width as needed */
+   margin-left: auto;
+   margin-right: auto;
+   height: 90vh;
+   text-align: center;
+   position: relative;
+   z-index: 1; /* Ensure content is above the pseudo-element */
+ 
+   
+ }
+
+.story-para{
+color:#aaadab;
+font-size: 17px!important;
+font-weight: 800!important;
+line-height: 30px;
+
+}
+
+.story-button {
+  margin-top: 50px!important;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 252, 251, 1) 0%,
+    rgba(171, 140, 54, 1) 0%,
+    rgba(131, 120, 84, 1) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: 100%;
+  text-decoration: none;
+}
+.story-button:hover{
+  background: goldenrod;
+  color: gray;
+}
+
+}
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+
+
+  .timeline {
+    left: 30px;
+    height: 930%!important;
+  }
+  .study--section--content{
+    margin-left: -60px;
+  }
+  
+  .study-story{
+    margin-top: 10px;
+     border-radius: 2rem;
+     width:150%; /* Adjust the max-width as needed */
+     margin-left: -50px;
+     margin-right: auto;
+     height: 90vh!important;
+   
+   }
+   
+     }
+  
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .timeline {
+    left: 30px;
+    height: 1240%;
+  }
+  .study--detail {
+ color: gray;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 300px; /* Adjust the max-width as needed */
+ 
+  text-align: left;  
+}
+.study-place {
+  color: goldenrod;
+  width: 300px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: left;
+  align-self: stretch;
+  
+}
+
+  .study-section-content-box {
+    width: 100%;
+    margin: 40px 0;
+    float: none;
+  }
+
+  .study--section--content {
+    text-align: center;
+  }
+  .study-section-content-box.left {
+    margin-top: 0;
+    margin-right: -50px;
+  }
+  .study-section-content-box.right {
+    margin-top: 0;
+    margin-right: -50px;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .study-story {
+    display: none;
+  }
+}
+
+/* core values  */
+
+.core--section {
+  background: #2b2622;
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 106.667px;
+}
+.portfolio-core-container {
+    text-align: center;
+}
+
+.core-title{
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+.core-text {
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 3px 10px;
+  color: white;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Start position outside the left edge */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End position at the original position */
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+
+  .core-title{
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 77px;
+    margin-bottom: 10px; 
+    text-align: center!important;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    width: 120%;
+    margin-left: -50px;
+  
+  }
+
+}
+
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+  .core-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+   
+  }
+  
+  .core-text {                                                                           
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .core--section--card {
+     width: 120%;
+    height: 450px;
+    margin-left: -50px;
+  }
+
+}
+
+
+
+.skills--section--para {
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+/* icons animations*/
+.fa-lightbulb {
+  font-size: 100px;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-lightbulb:hover {
+  color: #ffd700; /* Change to your desired golden color */
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+@keyframes handshakeAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.fa-handshake {
+  font-size: 100px;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.fa-handshake:hover {
+  color: #ffd700; /* Change to your desired golden color */
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+  animation: handshakeAnimation 1s ease infinite; /* Adjust the animation duration as needed */
+}
+/* Inside your component's CSS or a separate stylesheet */
+.check-icon {
+  font-size: 100px;
+  color: white; /* Set the initial check color as white */
+  padding: 10px; /* Adjust padding for better visibility */
+  border-radius: 50%; /* Make it a circular icon */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+}
+
+.check-icon:hover {
+  color: goldenrod; 
+  background-color: #2b2622;
+  animation: checkAnimation 0.8s ease; 
+}
+
+@keyframes checkAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fa-Snowflake {
+  font-size: 100px;
+  color: white; /* Set the initial check color as white */
+  padding: 10px; /* Adjust padding for better visibility */
+  border-radius: 50%; /* Make it a circular icon */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+}
+
+.fa-Snowflake:hover {
+  color: goldenrod; 
+  background-color: #2b2622;
+  animation: checkAnimation 0.8s ease; 
+}
+
+@keyframes checkAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.fa-cogs {
+  font-size: 100px;
+  color: white; /* Set the initial check color as white */
+  padding: 10px; /* Adjust padding for better visibility */
+  border-radius: 50%; /* Make it a circular icon */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.9s ease; /* Add smooth transitions */
+}
+
+.fa-cogs:hover {
+  color: goldenrod; 
+  background-color: #2b2622;
+  transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}
+
+.core--section--container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 42.6px;
+  grid-template-columns: repeat(3, 1fr); /* Update to three columns */
+  grid-template-rows: repeat(2, 1fr);    /* Add three rows */
+
+  grid-auto-rows: auto; /* Set minimum height for additional rows */
+  height: auto; /* Set height to auto or specify a fixed height */
+
+}
+
+.core--section--card {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex: 1 0 0;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+  background: #474641;
+
+  height: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
+}
+
+.core--section--card:hover {
+  transform: scale(0.9); /* Scale down */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #FFD700, #CD853F); /* Gradient color */
+  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+}
+
+
+.core--section--card:hover .core--section--description {
+  color: goldenrod;
+}
+.core--section--img {
+  display: flex;
+  padding: 13.3px;
+  justify-content: center;
+  align-items: center;
+  gap: 13.3px;
+  border-radius: 10.6px;
+  background: #2b2622;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}   
+.core--section--card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  
+}
+.core-title {
+  color: white;
+   font-size: 35px;
+  font-weight: 900;
+  line-height: 30px;
+  align-items: center;
+}
+
+.core-description {
+  color: gray;
+  font-size: 15.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  max-width: 309px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text and leave margins from both sides */
+  text-align: center; /* Center the text within the max-width */
+}
+
+/* Responsive CSS for Mobile Screens */
+@media (max-width: 768px) {
+  .core--section--container {
+    grid-template-columns: 1fr; /* Change to a single column for mobile screens */
+    grid-template-rows: repeat(auto, 1fr); /* Allow auto rows for mobile screens */
+  }
+  .core-title {
+    color: white;
+     font-size: 35px;
+    font-weight: 900;
+    line-height: 30px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .core--section--card {
+    height: auto; /* Set height to auto for mobile screens */
+     border-radius: 2rem;
+  }
+
+  .core--section--img {
+    width: 150px; /* Adjust width as needed for mobile screens */
+    height: 150px; /* Adjust height as needed for mobile screens */
+  }
+
+  .core-title {
+    font-size: 28px; /* Adjust font size for mobile screens */
+  }
+
+  .core-description {
+    font-size: 14px; /* Adjust font size for mobile screens */
+  }
+}
+
+
+/* ................................. */
+
+/* client Section Style */
+.client--section {
+  background: #2b2622;
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 106.667px;
+}
+.portfolio-client-container {
+    text-align: center;
+}
+
+
+
+.client-title{
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+.client-text {
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 3px 10px;
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+  white-space: nowrap; /* Prevent line breaks */
+  animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Start position outside the left edge */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* End position at the original position */
+    opacity: 1;
+  }
+}
+
+
+
+.client--section--para {
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center!important;
+
+}
+@media (max-width: 768px) {
+
+  .client-upper-p {
+  display: none;
+  
+  }
+  .client-title{
+    color: white;
+    font-size: 40px;
+    width: 130%;
+    margin-left: -50px;
+    font-weight: 700;
+    line-height: 77px;
+    margin-bottom: 10px; 
+    justify-content: center;
+    text-align: center!important;    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+  
+  
+  }
+  .client-text {
+    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+    max-width: max-content;
+    padding: 3px 10px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center !important;
+    display: inline-block; /* Make it an inline block to use text-align */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
+    opacity: 0; /* Initially set opacity to 0 */
+  }
+
+}
+
+
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+  .client-title{
+    color: white;
+    font-size: 10px;
+    width: 170%;
+    margin-left: -80px;
+    font-weight: 700;
+    line-height: 66px;
+  
+  
+  }
+  .client-text {
+    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+    max-width: max-content;
+    padding: 3px 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height:55px;
+    
+
+}
+
+.client--section--para {
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  width: 110%!important;/* Adjust the max-width as needed */
+  
+}
+.client--section--container {
+width: 150%!important;
+margin-left: 10px!important;
+
+}
+.client--section--card {
+  width: 80%!important;
+ 
+}
+
+.client-title {
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+}
+
+
+
+
+
+
+
+.client-upper-p {
+  color: goldenrod;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ 
+
+}
+
+
+
+
+.client--section--container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  justify-items: center; /* Center items within the grid */
+width: 95%;
+margin-left: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.client--section--card {
+  display: flex;
+  padding: 35px;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
+  background: #474641;
+  min-height: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
+.client--section--card:hover {
+  transform: scale(1.1); /* Increase the size of the hovered card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+/* Remove the margin on the cards */
+.client--section--card:first-child {
+  margin-left: 0px;
+}
+
+.client--section--card:last-child {
+  margin-right: 1px;
+}
+
+.client--section--card:hover {
+  transform: scale(0.9); /* Scale down */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #FFD700, #CD853F); /* Gradient color */
+  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+}
+
+
+.client--section--card:hover .client--section--description {
+  color: goldenrod;
+}
+.client--section--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 200px;
+  padding: 13.3px;
+  border-radius: 10.6px;
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+  position: relative; /* Ensure the child img is positioned correctly */
+  background: #2b2622;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.client--section--img img {
+ width: 100%;
+ height: 100%; /* Ensure the image takes up the full height of the container */
+
+  object-fit: cover; /* Ensure the image covers the entire container while maintaining its aspect ratio */
+  border-radius: 10.6px; /* Match the container's border-radius */
+  position: absolute; /* Position the img element absolutely within its container */
+  top: 0;
+  left: 0;
+}
+
+.client--section--card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  
+}
+
+.elementor-carousel {
+  display: flex;
+  justify-content: space-between; /* You can adjust this based on your design */
+  max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
+  
+  margin: 0 -10px; /* Adjust as needed to add space between cards */
+}
+.client-title {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 45px;
+  align-items: center;
+}
+
+.client-position {
+  color: #a3a19d;
+  font-size: 20.9px;
+  font-weight: 500;
+  line-height: 1px; /* Adjust as needed */
+  margin-top: 5px; /* Add margin to create a gap */
+  align-items: center;
+}
+
+.client-company{
+  color: #a3a19d;
+   font-size: 20.9px;
+  font-weight: 500;
+  line-height: 1px;
+  align-items: center;
+}
+
+
+
+.client-description {
+  color: gray;
+  font-size: 17.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 350px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text and leave margins from both sides */
+}
+
+
+
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc; /* Inactive dot color */
+  margin: 0 5px; /* Adjust the margin as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color:goldenrod; /* Active dot color */
+}
+
+
+
+/* Mobile Responsive CSS */
+@media (max-width: 768px) {
+    body {
+    overflow-x: hidden; /* Hide horizontal scrollbar on the entire page */
+  }
+
+  .client--section--container {
+    grid-template-columns: 1fr; /* Change to a single column for mobile screens */
+  
+  }
+  .elementor-carousel::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+  .elementor-carousel {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure the cards don't wrap to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    scroll-snap-type: x mandatory; /* Enable smooth scrolling between cards */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+  }
+
+  .client--section--card {
+    flex-shrink: 0; /* Prevent cards from shrinking to fit the container */
+    width: 100%; /* Full width for mobile screens */
+    margin: 0 9px; /* Adjust margin as needed */
+  }
+}
+
+
+
+
+/* serve Section Style */
+.serve--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 10%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: #2b2622;
+}
+
+.serve--section--content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.serve--section--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333px;
+}
+
+.serve--section--content--box > button {
+  margin-top: 21.333px;
+}
+
+.serve--title {
+  color: goldenrod;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.serve--section--title {
+  color: var(--heading-color);
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+  align-self: stretch;
+  color: white;
+}
+
+.serve--Ambition {
+  color: white;
+  font-weight: 800;
+}
+
+.serve--ambition-description {
+  color: gray;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.3rem;
+}
+
+.serve--section--img {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.last-image {
+  height: auto !important;
+  width: auto;
+  margin-top: -10rem; /* Adjust as needed */
+  margin-left: 0;
+}
+
+/* Button Styles */
+.your-button-class {
+  margin-top: 21.333px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 252, 251, 1) 0%,
+    rgba(171, 140, 54, 1) 0%,
+    rgba(131, 120, 84, 1) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+/* Add a new CSS rule for mobile screens */
+@media screen and (max-width: 768px) {
+  .serve--section {
+    grid-template-columns: 1fr;
+    padding: 5% 5%;
+  }
+
+  .serve--section--img {
+    order: 1; /* Change the order for mobile screens */
+  }
+
+  .last-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 450px; /* Set a maximum width if necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1rem; /* Adjust as needed */
+  }
+
+  .hori-con,
+  .v-con {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+/* Dots Styles */
+.hori-con,
+.v-con {
+  text-align: center;
+}
+
+.dot-row {
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: row;
+  width: 160px;
+}
+
+.dot-w {
+  height: 10px;
+  width: 10px;
+  background-color: goldenrod;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.dot-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* My Portfolio Starts */
+.portfolio--section {
+  display: flex;
+  padding: 112px 85px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.portfolio--container-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.portfolio--container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.3px;
+}
+.portfolio--section--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42.6px;
+  width: 100%;
+}
+.portfolio--section--img {
+  border-radius: 8px;
+  width: 100%;
+}
+.portfolio--section--img > img {
+  width: 100%;
+}
+.portfolio--section--card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  background: #fff;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.portfolio--section--card--content {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.portfolio--section--title {
+  color: var(--heading-color);
+}
+.portfolio--link {
+  text-decoration: none;
+  display: flex;
+  gap: 16px;
+  border-bottom: 1.33px solid var(--primary);
+  padding-bottom: 10.6px;
+  font-weight: 600;
+}
+.portfolio--section--card:hover path {
+  stroke: #006b6a;
+}
+/* Portfolio Ends */
+
+/* Testimonial */
+.testimonial--section {
+  display: flex;
+  padding: 112px 84.3px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+  background-color: var(--bg-shade);
+}
+.sections--heading {
+  color: var(--heading-color);
+}
+.testimonial--section--card {
+  display: flex;
+  padding: 42.6px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42.6px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1.33px solid #006b6a;
+}
+.testimonial--section--card--reviews {
+  display: flex;
+  align-items: flex-start;
+  gap: 5.33px;
+}
+.testimonial--section--card--author--detail {
+  display: flex;
+  align-items: center;
+  gap: 21.3px;
+}
+.testimonial--author--name {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+.testimonial--author--designation {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+/* Testimonial Ends */
+/* .contact--section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5% 10%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background: #2b2622;
+  color: white;
+ 
+} */
+
+
+
+/* .get-contact {
+ font-size: 50px;
+ line-height: 2;
+} */
+
+
+
+
+.contact--section {
+  background: #2b2622;
+  display: flex;
+  padding: 149.33px 85.33px;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 106.667px;
+}
+.portfolio-contact-container {
+    text-align: center;
+}
+
+.contact-title{
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+
+.contact--section--para {
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-title{
+  display: none;
+  }
+
+  .contact--section--para {
+   display: none;
+  }
+  
+}
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .two-columns {
+    flex-direction: column; /* Change to a single column for mobile screens */
+  }
+  .column {
+    flex: 1;
+    width: 100%; /* Make each column take full width on mobile */
+  }
+  .contact--form--container {
+    grid-template-columns: 1fr; /* Change to a single column for mobile screens */
+    margin-top: -350px;
+  }
+  .col-title{
+     margin-left: -50px;
+  }
+  .col-reach{
+    margin-left: -50px;
+  }
+  .btn-phone {
+  /* max-width: 85%; */
+    /* Add space between icon and text */
+    gap: 10px;
+  }
+
+  
+}
+
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+
+  .col-title{
+    margin-left: -70px;
+ }
+
+
+ .col-para {
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: -54px!important;
+
+}
+.btn-email {
+
+  max-width: 200%!important;
+margin-left: -50px;
+}
+
+.btn-phone {
+  margin-top: 10px;
+  width: 150%!important;
+  margin-left: -50px;
+ 
+}
+
+.phone-link{
+ 
+  margin-top: 55px;
+  margin-left: -60px;
+  font-size: 16px!important;
+  width: 100%!important;
+  
+  }
+
+  .email-link{
+    font-size: 14px!important;
+    }
+  
+
+
+
+
+}
+
+
+.two-columns {
+  display: flex;
+  gap: 400px;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+
+}
+
+.col-title{
+  
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+.talk-sp{
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  max-width: max-content;
+  padding: 0.1px 10px;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 77px;
+  text-align: center !important;
+  display: inline-block; /* Make it an inline block to use text-align */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+
+
+.col-para {
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: 40px;
+  margin-right: auto;
+  text-align: left;
+}
+
+.col-reach{
+  
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+
+.btn-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+
+background-color: #474641;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: 100%;
+  height: 100px;
+  text-decoration: none;
+
+  /* Add space between icon and text */
+  gap: 10px;
+}
+.email-link{
+color: white;
+text-decoration: none;
+
+margin-top: 55px;
+margin-left: -60px;
+font-size: 13px;
+width: 100%;
+
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+.email-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+.e-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+}
+
+
+.btn-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+
+background-color: #474641;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+
+  /* Add space between icon and text */
+  gap: 10px;
+}
+.phone-link{
+color: white;
+text-decoration: none;
+
+margin-top: 55px;
+margin-left: -60px;
+font-size: 13px;
+width: 100%;
+
+}
+.phone-link:hover {
+  text-decoration: underline;
+}
+.phone-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+.p-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  margin-left: -70px;
+}
+
+
+
+
+.col-follow{
+  
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+
+
+
+.follow-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  gap: 40px; /* Adjust the gap as needed */
+}
+
+.follow-icon {
+  border-radius: 50%;
+  padding: 8px; /* Adjust the padding as needed */
+}
+
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin{
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+
+}
+/* YourComponent.css */
+
+@keyframes ringingAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.fa-volume-control-phone:hover {
+  animation: ringingAnimation 1s infinite; /* Adjust the animation duration as needed */
+}
+
+
+
+/* Style for the icon (Adjust the dimensions as needed) */
+
+.contact--form--container {
+  justify-content: center;
+  align-items: center;
+  gap: 42.6px;
+ 
+  grid-template-columns: repeat(2, 1fr);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 32px;
+  row-gap: 32px;
+}
+.contact--label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10.6px;
+  flex: 1 0 0;
+  width: 100%;
+}
+.contact--input {
+  display: flex;
+  font-family: "Roboto";
+  padding: 16px;
+  align-items: center;
+  align-self: stretch;
+  
+  border: 1.333px solid #2b2622 ;
+  background-color: #474641;
+  border-radius: 2rem;
+ 
+}
+
+.contact--form--btn{
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+
+background-color: #474641;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+   max-width: 300px;
+  text-decoration: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Some browsers will not display the caret when using calc, so we put the fallback first */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
+    white no-repeat 98.5% !important; /* !important used for overriding all other customisations */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>')
+    white no-repeat calc(100% - 20px); /* Better placement regardless of input width */
+}
+/*For IE*/
+select::-ms-expand {
+  display: none;
+}
+.checkbox--label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10.6px;
+  flex: 1 0 0;
+  justify-content: flex-start;
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+  border: 0.15em solid var(--heading-color);
+  border-radius: 0.15em;
+  transform: translatey(-0.075em);
+}
+/* Contact End */
+
+/* Footer Start */
+/* Footer Starts */
+
+@media screen and (max-width: 768px) {
+  .divider {
+    width: 150% !important; /* Set the width to 100% for mobile screens */
+      margin-top: -14px!important;
+  }
+  .footer--container {
+    padding: 9px 10px!important; /* Adjust the padding to change the height for mobile screens */
+  }
+ 
+  
+  .footer--content {
+   margin-top: -150px !important;
+   font-size: 15px!important;
+  }
+  
+
+}
+.footer--container {
+  display: flex;
+  padding: 150px 85.333px; /* Adjust the padding to increase the height */
+  flex-direction: column;
+  background-color: #474641;
+  align-items: center;
+  align-self: stretch;
+}
+
+
+.divider {
+  margin-left: -85px;
+  margin-top: -120px;
+  height: 2.333px;
+  width: 114%;
+  background: goldenrod;
+}
+
+.footer-para {
+  color: white;
+  margin-top: 60px;
+}
+/* Update the styles for the logos */
+.footer--container img {
+  width: 80px; /* Adjust the width to reduce the size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add margin between logos */
+}
+
+/* Change the color of the first logo to goldenrod */
+.footer--container img:first-child {
+  background-color: goldenrod; /* Change the background color */
+}
+
+.footer--content--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.footer--content {
+ 
+  color: var(--black);
+  font-size: 18.667px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 30px;
+  color: white;
+  font-weight: 200;
+  margin-top: -150px;
+}
+
+
+/* Responsive Screens */
+@media only screen and (max-width: 1800px) {
+  .hero--section--title {
+    font-size: 68px;
+    line-height: 70px;
+  }
+  .skills--section--title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .skills--section--heading {
+    font-size: 54px;
+    line-height: 70px;
+  }
+  .skills--section--container {
+    gap: 16px;
+  }
+  .skills--section--card {
+    gap: 28px;
+  }
+  .skills--section--card--content {
+    gap: 20px;
+  }
+  .skills--section--title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .skills--section--description {
+    font-size: 17.333px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .btn-outline-primary {
+    display: none;
+  }
+  .hero--section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 70px;
+  }
+  .hero--section--title,
+  .hero--section-description,
+  .footer--content {
+    text-align: center;
+  }
+  .skills--section--container,
+  .about--section,
+  .portfolio--section--container,
+  .portfolio--container-box,
+  .footer--link--container,
+  .footer--items > ul,
+  .footer--content--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills--section,
+  .portfolio--container,
+  .hero--section--content,
+  .hero--section--content--box {
+    align-items: center;
+  }
+  .portfolio--container-box {
+    gap: 30px;
+  }
+  .skills--section,
+  .testimonial--section,
+  .contact--section,
+  .footer--container {
+    gap: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .about--section {
+    gap: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .testimonial--section--card {
+    padding: 25px;
+  }
+  .hero--section--title,
+  .skills--section--heading,
+  .sections--heading {
+    font-size: 30px;
+    line-height: 30px;
+    align-items:center ;
+    margin-left: -10px;
+
+  }
+  .hero--section--content--box {
+    gap: 10px;
+  }
+  .contact--form--container {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer--social--icon > ul,
+  .footer--items > ul {
+    padding: 0;
+    align-items: center;
+  }
+  .divider {
+    margin: 20px;
+  }
+}
+
+/* Hamburger menu  */
+
+.nav__hamburger {
+  display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  
+}
+
+.nav__hamburger__line {
+  display: block;
+  height: 0.188rem;
+  width: 100%;
+  background-color:  goldenrod;
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__hamburger {
+    display: flex;
+    z-index: 200;
+    
+  }
+  .navbar--items {
+    display: flex;
+  }
+  .navbar--items {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2b2622;
+    color: goldenrod;
+    top: -50rem;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: all ease-in-out 0.4s;
+  }
+  .navbar--items ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10rem 0 0.6rem;
+    z-index: -100;
+  }
+  .navbar--items ul li {
+    text-align: center;
+  }
+  .navbar--items ul li a {
+    padding: 0.5rem;
+  }
+  .navbar--items {
+    z-index: -1000;
+  }
+  .navbar--items.active {
+      top: 0; /* Change this value to show all items */
+    transform: translateX(0); /* Show the menu instantly */
+    
+    
+  }
+  .nav__hamburger.active::before,
+  .nav__hamburger.active::after,
+  .nav__hamburger.active :nth-child(1),
+  .nav__hamburger.active :nth-child(3) {
+    background-color: goldenrod; /* Change the color to your desired color */
+  }
+  
+  .nav__hamburger.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+    
+  }
+
+  .nav__hamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__hamburger.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
+}
+
+/* Responsive Screens Ends*/
