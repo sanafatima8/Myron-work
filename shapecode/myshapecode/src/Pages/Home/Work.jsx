@@ -123,9 +123,9 @@ export default function Work() {
 
 
 <div className="work--section--img">
-<img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""  className="small-image"/>
+{/* <img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""  className="small-image"/> */}
 
-          {/* <img  src="./img/image.jpg"  alt="work Section"  className="small-image"/> */}
+          <img  src="./img/last image.jpg"  alt="work Section"  className="small-image"/>
           <div className="horizontal--banner"><span className="three-plus">3+</span>
                <br /> 
                 <span className="ex-text"> Year Of Experience</span>
