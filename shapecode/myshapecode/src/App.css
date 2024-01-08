@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+    overflow-x: hidden;
+
+  
 }
 h1,
 h2,
@@ -220,6 +223,31 @@ h2 {
   background-color: goldenrod;
 }
 
+
+
+
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+  .logo{
+    margin-left: -60px;
+  }
+  .nav__hamburger__line{
+    margin-left: -30px!important;
+  }
+  
+  }
+  
+  
+  @media screen and (min-width: 414px) and (max-width: 896px) {
+  
+    .logo{
+      margin-left: -60px;
+    }
+    .nav__hamburger__line{
+      margin-left: -30px!important;
+    }
+  
+  }
+
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
@@ -331,14 +359,21 @@ h2 {
     text-decoration: none;
   }
 }
-/* Missing closing curly brace here */
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .hero--section--title {
+    margin-top: 20px; /* Adjust the margin for mobile */
+    font-size: 16px!important;
+  }
+  .btn-work {
+    font-size: 14px;
+  }
+}
 
 @media screen and (min-width: 390px) and (max-width: 844px) {
-
   .hero--section--title {
     margin-top: 20px; /* Adjust the margin for mobile */
     font-size: 19.1px!important;
-  
   }
 }
 
@@ -1531,37 +1566,170 @@ line-height: 30px;
 
 
   .timeline {
-    left: 30px;
-    height: 930%!important;
+    left: 20px!important;
+    height: 1040%!important;
   }
   .study--section--content{
-    margin-left: -60px;
+    margin-left: -99px;
   }
-  
+  .study--detail {
+    margin-left: 2px;
+    max-width: 300px; /* Adjust the max-width as needed */
+   
+  }
+
   .study-story{
     margin-top: 10px;
      border-radius: 2rem;
      width:150%; /* Adjust the max-width as needed */
-     margin-left: -50px;
+     margin-left: -60px;
      margin-right: auto;
      height: 90vh!important;
    
    }
+   .study-section-content-box.left {
+    margin-top: 0;
+    margin-right: -60px!important;
+    margin-left: 10px;
+  }
+  .study-section-content-box.right {
+    margin-top: 0;
+    margin-right: -50px;
+  }
    
      }
   
+
+
+/* galaxy A12 */
+     @media screen and (min-width: 360px) and (max-width: 800px) {
+      .timeline {
+        left: 20px!important;
+        height: 1050%!important;
+      }
+
+      .study--section--content{
+        margin-left: -70px;
+      }
+        
+     
+      .study--detail {
+         margin-left: -1px;
+         max-width: 300px; /* Adjust the max-width as needed */
+        
+       }
+       .study-section-content-box.left {
+        margin-top: 0;
+        margin-right: -60px!important;
+        margin-left: 10px;
+      }
+      .study-section-content-box.right {
+        margin-top: 0;
+        margin-right: -50px;
+      }
+
+      .study-story{
+        margin-top: 100px;
+         border-radius: 2rem;
+        
+         width: 150%; /* Adjust the max-width as needed */
+         margin-left: -50px;
+         margin-right: auto;
+         height: auto;
+         text-align: center;
+         background-image: url('..//public/img/story.jpeg');
+         background-size: cover; /* Adjust the size to cover the entire section */
+         background-position: center; /* Adjust the position if needed */
+         background-repeat: no-repeat;
+         position: relative;
+         overflow: hidden;
+       
+       }
+       
+       .study-story::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+       }
+       
+       .study-story-content{
+         margin-top: 100px;
+          color:white;
+          border-radius: 2rem;
+          width: 80%; /* Adjust the max-width as needed */
+          margin-left: auto;
+          margin-right: auto;
+          height: 90vh;
+          text-align: center;
+          position: relative;
+          z-index: 1; /* Ensure content is above the pseudo-element */
+        
+          
+        }
+       
+       .story-para{
+       color:#aaadab;
+       font-size: 17px!important;
+       font-weight: 800!important;
+       line-height: 30px;
+       
+       }
+       
+
+     }
+
+
+
+
 /* Add media query for iphone  screens */
 @media screen and (min-width: 414px) and (max-width: 896px) {
 
 
   .timeline {
-    left: 30px;
+    left: 20px!important;
     height: 870%!important;
+  }
+  .study--section--content{
+    margin-left: -100px;
+  }
+    
+ 
+  .study--detail {
+     margin-left: -1px;
+     max-width: 300px; /* Adjust the max-width as needed */
+    
+   }
+   .study-section-content-box.left {
+    margin-top: 0;
+    margin-right: -60px!important;
+    margin-left: 10px;
+  }
+  .study-section-content-box.right {
+    margin-top: 0;
+    margin-right: -50px;
   }
 
 
+ }
+
+
+
+
+/* Add media query for google pixel5 screens */
+
+@media screen and (min-width: 393px) and (max-width: 851px) {
+  .timeline {
+    left: 30px;
+    height: 970%!important;
+  }
+
 
  }
+
 /* Add media query for smaller screens */
 @media (max-width: 768px) {
   .timeline {
@@ -1697,13 +1865,16 @@ line-height: 30px;
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
-   
+    margin-left: -20px!important;
+
   }
   
   .core-text {                                                                           
     font-size: 30px;
     font-weight: 700;
     line-height: 60px;
+    margin-left: -20px;
+
   }
   .core--section--card {
      width: 120%;
@@ -1713,6 +1884,30 @@ line-height: 30px;
 
 }
 
+@media screen and (min-width: 414px) and (max-width: 896px) {
+  .core-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: -30px!important;
+   
+  }
+  
+  .core-text {                                                                           
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: -30px;
+  }
+  .core--section--card {
+     width: 120%;
+    height: 450px;
+    margin-left: -50px;
+  }
+
+
+
+}
 
 
 .skills--section--para {
@@ -2056,8 +2251,8 @@ line-height: 30px;
   .client-title{
     color: white;
     font-size: 10px;
-    width: 170%;
-    margin-left: -80px;
+    width: 150%;
+    margin-left: -50px!important;
     font-weight: 700;
     line-height: 66px;
   
@@ -2080,7 +2275,7 @@ line-height: 30px;
   font-size: 20px;
   font-weight: 300;
   line-height: 30px;
-  width: 110%!important;/* Adjust the max-width as needed */
+  width: 100%!important;/* Adjust the max-width as needed */
   
 }
 .client--section--container {
@@ -2102,14 +2297,63 @@ margin-left: 10px!important;
 
 }
 
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .client-title{
+    color: white;
+    font-size: 8px;
+    width: 150%;
+    margin-left: -50px;
+    font-weight: 700;
+    line-height: 66px;
+  
+  
+  }
+  .client-text {
+    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+    max-width: max-content;
+    padding: 3px 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height:55px;
+    
+
+}
+.client--section--para {
+  color: gray;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  width: 100%!important;/* Adjust the max-width as needed */
+  
+}
+
+.client--section--container {
+  width: 150%!important;
+  margin-left: 10px!important;
+  
+  }
+  .client--section--card {
+    width: 80%!important;
+   
+  }
+  
+  .client-title {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+
+}
 
 @media screen and (min-width: 414px) and (max-width: 896px) {
 
   .client-title{
     color: white;
-    font-size: 10px;
-    width: 170%;
-    margin-left: -80px;
+    font-size: 8px;
+    width: 150%;
+    margin-left: -70px;
     font-weight: 700;
     line-height: 66px;
   
@@ -2741,12 +2985,74 @@ margin-left: -50px;
   
 }
 
+
+
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .col-title{
+    margin-left: -70px;
+ }
+
+
+ .col-para {
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin-left: -54px!important;
+
+}
+
+.col-reach{
+  
+  color: white;
+  font-size: 25px!important;
+  margin-left: -20px!important;
+  font-weight: 700;
+  line-height: 77px;
+  margin-bottom: 10px; 
+  text-align: center!important;
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+
+
+}
+.btn-email {
+
+  max-width: 150%!important;
+margin-left: -50px;
+}
+
+.btn-phone {
+  margin-top: 10px;
+  width: 150%!important;
+  margin-left: -50px;
+ 
+}
+
+.phone-link{
+ 
+  margin-top: 70px!important;
+  margin-left: -80px!important;
+  font-size: 14px!important;
+  width: 150%!important;
+  
+  }
+
+  .email-link{
+    font-size: 12px!important;
+    }
+  
+
+}
+
 @media screen and (min-width: 414px) and (max-width: 896px) {
   /* Your styles for mobile screens between for iphone 414px and 896px */
 
   .btn-phone {
     margin-top: 10px;
-    width: 131%!important;
+    width: 120%!important;
     margin-left: -50px;
    
   }
@@ -2756,11 +3062,31 @@ margin-left: -50px;
     margin-top: 55px;
     margin-left: -60px;
     font-size: 16px!important;
-    width: 100%!important;
+    width: 200%!important;
     
     }
   
 }
+
+@media screen and (min-width: 393px) and (max-width: 851px) {
+
+  .btn-phone {
+    margin-top: 10px;
+    width: 134%!important;
+    margin-left: -50px;
+   
+  }
+  
+  .phone-link{
+   
+    margin-top: 55px;
+    margin-left: -60px;
+    font-size: 16px!important;
+    width: 200%!important;
+    
+    }
+  
+  }
 
 
 
@@ -3096,6 +3422,24 @@ input[type="checkbox"] {
   }
   
 
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+
+  .divider {
+    width: 104% !important; /* Set the width to 100% for mobile screens */
+      margin-top: -14px!important;
+  }
+
+}
+
+@media screen and (min-width: 414px) and (max-width: 896px) {
+
+  .divider {
+    width: 104% !important; /* Set the width to 100% for mobile screens */
+      margin-top: -14px!important;
+  }
 }
 .footer--container {
   display: flex;
