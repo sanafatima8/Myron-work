@@ -1,6 +1,20 @@
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 export default function Work() {
-    return (
-      <section id="workSection" className="work--section">
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    rootMargin: '0px 0px -50% 0px',
+  });
+
+  useEffect(() => {
+    if (inView) {
+      // Add any additional logic or side effects you need
+    }
+  }, [inView]);
+
+  return (
+    <section id="workSection" className="work--section">
         <div className="work--section--content--box">
           <div className="work--section--content">
             <p className="work--title">What drives me</p>
@@ -51,89 +65,19 @@ export default function Work() {
         </div>
 
 
-<div className="work--section--img">
-{/* <img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""  className="small-image"/> */}
 
-          <img  src="./img/myron.png"  alt="work Section"  className="small-image"/>
-          <div className="horizontal--banner"><span className="three-plus">3+</span>
-               <br /> 
-                <span className="ex-text"> Year Of Experience</span>
+
+<div className="work--section--img">
+<img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""    className="small-image"/>
+
+          {/* <img src="./img/image.jpg" alt="work Section"  className="small-image"/> */}
+          <div className={`horizontal--banner ${inView ? 'animate' : ''}`} ref={ref}>
+            <h1 className="three-plus"> Frontend developer <br />
+           and designer</h1>
+         
           </div>
         </div>
       </section>
     );
   }
-
-
-
-  {/*       
-
-  <div class='hori-con'>
-  <div class="hori-dots">
-    <div class="dot-row">
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      
-    </div>
-    <div class="dot-row">
-    <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-     
-    </div>
-  </div>
-</div>
-
-
-
-
-     
-<div class='v-con'>
-  <div class="vertical-dots-two">
-    <div class="dot-container">
-    <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-    
-    </div>
-    <div class="dot-container">
-        <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-      <span class="dot-w"></span>
-    </div>
-   </div>
-</div> */}
 

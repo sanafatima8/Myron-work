@@ -1,20 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from "../../data/index.json";
+import './client.css'; // Import a separate CSS file for styling
 
 export default function MySkills() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [activeDot, setActiveDot] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const nextIndex = (activeIndex + 1) % data?.client?.length;
+      setActiveIndex(nextIndex);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [activeIndex]);
 
   return (
     <section className="client--section" id="mySkills">
       <div className="portfolio-client-container">
-      <p className="client-upper-p">Client Testimonials</p>
-      <br />
-        <h2 className="client-title">Check out the &nbsp;<span className='client-text'>Feedback</span>
-      <br />
-       from People I've worked with
-      </h2>
-        <p className="client--section--para">I work very hard to please my client here is just a few of the nice things
+        <p className="client-upper-p">Client Testimonials</p>
+        <br />
+        <h2 className="client-title">
+          Check out the &nbsp;<span className='client-text'>Feedback</span>
+          <br />
+          from People I've worked with
+        </h2>
+        <p className="client--section--para">
+          I work very hard to please my client here is just a few of the nice things
           <br />
           people say about me and my work
         </p>
@@ -25,12 +36,8 @@ export default function MySkills() {
           {data?.client?.map((item, index) => (
             <div
               key={index}
-              className={`client--section--card ${hoveredIndex === index ? 'hovered' : ''}`}
-              onMouseEnter={() => {
-                setHoveredIndex(index);
-                setActiveDot(index);
-              }}
-              onMouseLeave={() => setHoveredIndex(null)}
+              className={`client--section--card ${activeIndex === index ? 'active' : 'inactive'}`}
+              onMouseEnter={() => setActiveIndex(index)}
             >
               <div className="client--section--img">
                 <img src={item.src} alt="Product Chain" />
@@ -50,12 +57,8 @@ export default function MySkills() {
         {data?.portfolio?.map((_, index) => (
           <div
             key={index}
-            className={`dot ${activeDot === index ? 'active' : ''}`}
-            onMouseEnter={() => {
-              setHoveredIndex(index);
-              setActiveDot(index);
-            }}
-            onMouseLeave={() => setHoveredIndex(null)}
+            className={`dot ${activeIndex === index ? 'active' : ''}`}
+            onMouseEnter={() => setActiveIndex(index)}
           ></div>
         ))}
       </div>

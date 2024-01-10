@@ -15,10 +15,11 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <Study/>
       <Work/>
       <MySkills />
       <AboutMe />
-      <Study/>
+   
       <Corevalue/>
       <ClientTestimonials/>
       <Serve/>

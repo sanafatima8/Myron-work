@@ -539,11 +539,49 @@ h2 {
   }
 }
 
+
+
+.animate {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 130px;
+  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+  align-items: center;
+  animation: slideIn 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.horizontal--banner.animate {
+  opacity: 1;
+}
+
+
+
+
+
+
 .three-plus {
-  font-weight: 900;
-  margin-left: 10%;
-  font-size: 5vw;
+  font-weight: 800;
+  margin-left: 5%;
+  font-size: 2.25vw;
   color: white;
+  line-height: 1;
+  align-self: center;
+  align-items: center;
+  margin-top: 20px;
+
 }
 
 .ex-text {
@@ -2141,446 +2179,6 @@ line-height: 30px;
 
 /* ................................. */
 
-/* client Section Style */
-.client--section {
-  background: #2b2622;
-  display: flex;
-  padding: 149.33px 85.33px;
-  flex-direction: column;
-  align-items: center; /* Center horizontally */
-  gap: 106.667px;
-}
-.portfolio-client-container {
-    text-align: center;
-}
-
-
-
-.client-title{
-  color: white;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 77px;
-  margin-bottom: 10px; 
-  text-align: center!important;
-  position: relative;
-  overflow: hidden; /* Hide overflowing content */
-
-
-}
-
-.client-text {
-  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
-  max-width: max-content;
-  padding: 3px 10px;
-  color: white;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 77px;
-  text-align: center !important;
-  display: inline-block; /* Make it an inline block to use text-align */
-  white-space: nowrap; /* Prevent line breaks */
-  animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
-  opacity: 0; /* Initially set opacity to 0 */
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%); /* Start position outside the left edge */
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0); /* End position at the original position */
-    opacity: 1;
-  }
-}
-
-
-
-.client--section--para {
-  color: gray;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 30px;
-  max-width: 800px; /* Adjust the max-width as needed */
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  text-align: center!important;
-
-}
-@media (max-width: 768px) {
-
-  .client-upper-p {
-  display: none;
-  
-  }
-  .client-title{
-    color: white;
-    font-size: 40px;
-    width: 130%;
-    margin-left: -50px;
-    font-weight: 700;
-    line-height: 77px;
-    margin-bottom: 10px; 
-    justify-content: center;
-    text-align: center!important;    position: relative;
-    overflow: hidden; /* Hide overflowing content */
-  
-  
-  }
-  .client-text {
-    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
-    max-width: max-content;
-    padding: 3px 10px;
-    color: white;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 70px;
-    text-align: center !important;
-    display: inline-block; /* Make it an inline block to use text-align */
-    white-space: nowrap; /* Prevent line breaks */
-    animation: slideInFromLeft 2s ease-in-out forwards; /* Animation properties */
-    opacity: 0; /* Initially set opacity to 0 */
-  }
-
-}
-
-
-@media screen and (min-width: 390px) and (max-width: 844px) { 
-  .client-title{
-    color: white;
-    font-size: 10px;
-    width: 150%;
-    margin-left: -50px!important;
-    font-weight: 700;
-    line-height: 66px;
-  
-  
-  }
-  .client-text {
-    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
-    max-width: max-content;
-    padding: 3px 10px;
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    line-height:55px;
-    
-
-}
-
-.client--section--para {
-  color: gray;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 30px;
-  width: 100%!important;/* Adjust the max-width as needed */
-  
-}
-.client--section--container {
-width: 150%!important;
-margin-left: 10px!important;
-
-}
-.client--section--card {
-  width: 80%!important;
- 
-}
-
-.client-title {
-  justify-content: center;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
-}
-
-@media screen and (min-width: 360px) and (max-width: 800px) {
-  .client-title{
-    color: white;
-    font-size: 30px!important;
-    width: 100%;
-    
-    font-weight: 700;
-    line-height: 66px;
-  
-  
-  }
-  .client-text {
-    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
-    max-width: max-content;
-    padding: 3px 10px;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    line-height:44px;
-    
-
-}
-.client--section--para {
-  color: gray;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 30px;
-  width: 100%!important;/* Adjust the max-width as needed */
-  
-}
-
-.client--section--container {
-  width: 150%!important;
-  margin-left: 10px!important;
-  
-  }
-  .client--section--card {
-    width: 80%!important;
-   
-  }
-  
-  .client-title {
-    justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-
-}
-
-@media screen and (min-width: 414px) and (max-width: 896px) {
-
-  .client-title{
-    color: white;
-    font-size: 8px;
-    width: 150%;
-    margin-left: -70px;
-    font-weight: 700;
-    line-height: 66px;
-  
-  
-  }
-  .client-text {
-    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
-    max-width: max-content;
-    padding: 3px 10px;
-    color: white;
-    font-size: 25px;
-    font-weight: 700;
-    line-height:55px;
-    
-
-}
-
-
-}
-
-
-
-
-
-
-.client-upper-p {
-  color: goldenrod;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 30px;
-  max-width: 800px; /* Adjust the max-width as needed */
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
- 
-
-}
-
-
-
-
-.client--section--container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  justify-items: center; /* Center items within the grid */
-width: 95%;
-margin-left: 30px;
-  grid-template-columns: repeat(3, 1fr);
-}
-.client--section--card {
-  display: flex;
-  padding: 35px;
-  width: 50%;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  flex: 1;
-  box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
-  background: #474641;
-  min-height: 400px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
-  flex: 0 0 auto;
-  margin: 0 10px;
-}
-
-.client--section--card:hover {
-  transform: scale(1.1); /* Increase the size of the hovered card */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-}
-
-/* Remove the margin on the cards */
-.client--section--card:first-child {
-  margin-left: 0px;
-}
-
-.client--section--card:last-child {
-  margin-right: 1px;
-}
-
-.client--section--card:hover {
-  transform: scale(0.9); /* Scale down */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
-  border-bottom: 4px solid;
-  border-image: linear-gradient(to right, #FFD700, #CD853F); /* Gradient color */
-  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
-}
-
-
-.client--section--card:hover .client--section--description {
-  color: goldenrod;
-}
-.client--section--img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  height: 200px;
-  padding: 13.3px;
-  border-radius: 10.6px;
-  overflow: hidden; /* Ensure the image doesn't overflow the container */
-  position: relative; /* Ensure the child img is positioned correctly */
-  background: #2b2622;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-}
-
-.client--section--img img {
- width: 100%;
- height: 100%; /* Ensure the image takes up the full height of the container */
-
-  object-fit: cover; /* Ensure the image covers the entire container while maintaining its aspect ratio */
-  border-radius: 10.6px; /* Match the container's border-radius */
-  position: absolute; /* Position the img element absolutely within its container */
-  top: 0;
-  left: 0;
-}
-
-.client--section--card--content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  align-self: stretch;
-  
-}
-
-.elementor-carousel {
-  display: flex;
-  justify-content: space-between; /* You can adjust this based on your design */
-  max-width: 100%; /* Ensure the container doesn't exceed the width of its parent */
-  
-  margin: 0 -10px; /* Adjust as needed to add space between cards */
-}
-.client-title {
-  color: white;
-  font-size: 35px;
-  font-weight: 900;
-  line-height: 45px;
-  align-items: center;
-}
-
-.client-position {
-  color: #a3a19d;
-  font-size: 20.9px;
-  font-weight: 500;
-  line-height: 1px; /* Adjust as needed */
-  margin-top: 5px; /* Add margin to create a gap */
-  align-items: center;
-}
-
-.client-company{
-  color: #a3a19d;
-   font-size: 20.9px;
-  font-weight: 500;
-  line-height: 1px;
-  align-items: center;
-}
-
-
-
-.client-description {
-  color: gray;
-  font-size: 17.3px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  max-width: 350px; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center the text and leave margins from both sides */
-}
-
-
-
-
-.dots-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px; /* Adjust the margin as needed */
-}
-
-.dot {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ccc; /* Inactive dot color */
-  margin: 0 5px; /* Adjust the margin as needed */
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.active {
-  background-color:goldenrod; /* Active dot color */
-}
-
-
-
-/* Mobile Responsive CSS */
-@media (max-width: 768px) {
-    body {
-    overflow-x: hidden; /* Hide horizontal scrollbar on the entire page */
-  }
-
-  .client--section--container {
-    grid-template-columns: 1fr; /* Change to a single column for mobile screens */
-  
-  }
-  .elementor-carousel::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
-}
-  .elementor-carousel {
-    display: flex;
-    flex-wrap: nowrap; /* Ensure the cards don't wrap to the next line */
-    overflow-x: auto; /* Enable horizontal scrolling on small screens */
-    scroll-snap-type: x mandatory; /* Enable smooth scrolling between cards */
-    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
-  }
-
-  .client--section--card {
-    flex-shrink: 0; /* Prevent cards from shrinking to fit the container */
-    width: 100%; /* Full width for mobile screens */
-    margin: 0 9px; /* Adjust margin as needed */
-  }
-}
-
-
-
-
 /* serve Section Style */
 .serve--section {
   display: grid;
@@ -3222,7 +2820,7 @@ background-color: #474641;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  width: 100%;
+  width: 100%!important;
   height: 100px;
   text-decoration: none;
 
@@ -3428,7 +3026,7 @@ input[type="checkbox"] {
 @media screen and (min-width: 360px) and (max-width: 800px) {
 
   .divider {
-    width: 104% !important; /* Set the width to 100% for mobile screens */
+    width: 105% !important; /* Set the width to 100% for mobile screens */
       margin-top: -14px!important;
   }
 
@@ -3445,7 +3043,7 @@ input[type="checkbox"] {
   display: flex;
   padding: 150px 85.333px; /* Adjust the padding to increase the height */
   flex-direction: column;
-  background-color: #474641;
+  background-color: #242323!important;
   align-items: center;
   align-self: stretch;
 }
@@ -3453,9 +3051,9 @@ input[type="checkbox"] {
 
 .divider {
   margin-left: -85px;
-  margin-top: -120px;
+  margin-top: -150px;
   height: 2.333px;
-  width: 114%;
+  width: 114.3%;
   background: goldenrod;
 }
 
