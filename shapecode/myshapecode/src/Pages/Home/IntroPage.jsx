@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import './loading.css';
+import './loadingnew.css';
 
 
 
-function Loadingpage() {
+function IntoPage() {
 
     const [loading, setLoading] = useState(true);
 
@@ -48,4 +48,4 @@ function Loadingpage() {
   )
 }
 
-export default Loadingpage
+export default IntroPage
