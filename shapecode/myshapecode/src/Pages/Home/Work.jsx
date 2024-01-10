@@ -80,3 +80,76 @@ export default function Work() {
       </section>
     );
   }
+
+
+
+  {/*       
+
+  <div class='hori-con'>
+  <div class="hori-dots">
+    <div class="dot-row">
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      
+    </div>
+    <div class="dot-row">
+    <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+     
+<div class='v-con'>
+  <div class="vertical-dots-two">
+    <div class="dot-container">
+    <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+    
+    </div>
+    <div class="dot-container">
+        <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+      <span class="dot-w"></span>
+    </div>
+   </div>
+</div> */}

@@ -11,13 +11,13 @@ import Corevalue from '../Corevalue';
 import ClientTestimonials from '../ClientTestimonials';
 import Serve from '../Serve';
 
-// import IntroPage from '../IntroPage'; // Correct the casing if needed
+ import IntroPage from '../IntroPage'; 
 
 
 export default function Home() {
   return (
     <>
-{/*      <IntroPage/> */}
+     <IntroPage/>
       <HeroSection />
       <Study/>
       <Work/>
