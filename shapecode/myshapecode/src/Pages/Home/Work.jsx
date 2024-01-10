@@ -68,7 +68,7 @@ export default function Work() {
 
 
 <div className="work--section--img">
-<img src={process.env.PUBLIC_URL + '/img/image.jpg'} alt=""    className="small-image"/>
+<img src={process.env.PUBLIC_URL + '/img/first.png'} alt=""    className="small-image"/>
 
           {/* <img src="./img/image.jpg" alt="work Section"  className="small-image"/> */}
           <div className={`horizontal--banner ${inView ? 'animate' : ''}`} ref={ref}>
