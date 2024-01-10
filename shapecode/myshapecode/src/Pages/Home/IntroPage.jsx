@@ -3,7 +3,7 @@ import './loadingnew.css';
 
 
 
-function IntoPage() {
+function IntroPage() {
 
     const [loading, setLoading] = useState(true);
 
