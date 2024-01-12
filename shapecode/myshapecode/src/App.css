@@ -533,6 +533,16 @@ h2 {
   width: auto;
   margin-top: -10rem; /* Adjust as needed */
 }
+
+
+@media (min-width: 1921px){
+
+  .small-image {
+    
+    margin-top: 5rem!important; /* Adjust as needed */
+  }
+}
+
 /* Media Query for Mobile */
 @media (max-width: 767px) {
   .work--section--img {
@@ -1573,6 +1583,44 @@ margin-left: -1px!important;
   text-align: left;
 }
 
+@media (min-width: 1921px){
+  .timeline {
+    margin-top: 100px;
+    width: 8px;
+    height: 3000px!important;
+    background-color: #ccc;
+    position: absolute;
+  margin-left: 250px;
+    
+  }
+  
+  .study-section-content-box {
+    width: 100%;
+    margin: 40px 0;
+    float: none;
+  }
+
+
+
+
+  .study-section-content-box.left {
+    float: left;
+    margin-left: 200px!important;
+    
+  
+  
+  }
+  
+  .study-section-content-box.right {
+    float: right;
+    margin-top: -25px;
+    margin-right:  -200px!important;
+   
+  }
+  
+  
+
+}
 
 
 @media (min-width: 1024px){
