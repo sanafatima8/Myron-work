@@ -1769,6 +1769,48 @@ margin-left: -1px!important;
    
 
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .study-story{
+    margin-top: 100px;
+     border-radius: 2rem;
+    
+     width: 130%; 
+     margin-left: -26px;
+     margin-right: auto;
+     height: auto;
+     text-align: center;
+     background-image: url('..//public/img/story.jpeg');
+     background-size: cover; 
+     background-position: center; 
+     background-repeat: no-repeat;
+     position: relative;
+     overflow: hidden;
+   
+   }
+   .study-story-content{
+     margin-top: 100px;
+      color:white;
+      border-radius: 2rem;
+      width: 80%; 
+      margin-left: auto;
+      margin-right: auto;
+      height: 120vh;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    
+      
+    }
+   
+ 
+  
+}
 /* @media (max-width: 768px){
 
 
@@ -2824,7 +2866,7 @@ line-height: 30px;
 
 
 /* Responsive Media Queries */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .two-columns {
     flex-direction: column; /* Change to a single column for mobile screens */
   }
@@ -2850,7 +2892,15 @@ line-height: 30px;
 
     /* this is right code sana  */
   }
+  .email-link{
+   
+    margin-left: -60px;
+    font-size: 10px!important;
+   
+    
+    }
 }
+
 
 /* @media screen and (max-width: 768px) {
   .btn-phone {
@@ -3332,14 +3382,14 @@ input[type="checkbox"] {
 
 /* Footer Start */
 /* Footer Starts */
-
+/* 
 @media screen and (max-width: 768px) {
   .divider {
-    width: 150% !important; /* Set the width to 100% for mobile screens */
+    width: 150% !important; 
       margin-top: -14px!important;
   }
   .footer--container {
-    padding: 9px 10px!important; /* Adjust the padding to change the height for mobile screens */
+    padding: 9px 10px!important; 
   }
  
   
@@ -3353,7 +3403,7 @@ input[type="checkbox"] {
 @media screen and (min-width: 360px) and (max-width: 800px) {
 
   .divider {
-    width: 105% !important; /* Set the width to 100% for mobile screens */
+    width: 105% !important; 
       margin-top: -14px!important;
   }
 
@@ -3361,7 +3411,7 @@ input[type="checkbox"] {
 @media screen and (min-width: 414px) and (max-width: 896px) {
 
   .divider {
-    width: 104% !important; /* Set the width to 100% for mobile screens */
+    width: 104% !important; 
       margin-top: -14px!important;
   }
 }
@@ -3373,7 +3423,19 @@ input[type="checkbox"] {
     width: 119.3%;
     background: goldenrod;
   }
-}
+} */
+
+
+@media only screen and (max-width: 600px){
+  .divider {
+       margin-top: 100px!important;
+       width:173.3%!important;
+        
+  
+  
+    }
+  }
+
 
 .footer--container {
   display: flex;
