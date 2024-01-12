@@ -6,9 +6,11 @@ body {
   -webkit-font-smoothing: "Roboto", sans-serif;
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
+
     overflow-x: hidden!important;
 
   
+
 }
 h1,
 h2,
@@ -216,6 +218,7 @@ h2 {
   width: 100%;
   height: 2px;
   background-color: goldenrod;
+
 }
 
 /* Styles for the active navbar item on hover */
@@ -224,9 +227,8 @@ h2 {
 }
 
 
-
-
-@media screen and (min-width: 390px) and (max-width: 844px) { 
+/* Media Query for screens between 360px and 800px */
+@media screen and (min-width: 360px) and (max-width: 800px) {
   .logo{
     margin-left: -60px;
   }
@@ -235,18 +237,42 @@ h2 {
   }
   
   }
-  
-  
-  @media screen and (min-width: 414px) and (max-width: 896px) {
-  
-    .logo{
-      margin-left: -60px;
-    }
-    .nav__hamburger__line{
-      margin-left: -30px!important;
-    }
-  
+
+
+
+
+
+
+@media screen and (min-width: 390px) and (max-width: 844px) { 
+.logo{
+  margin-left: -60px;
+}
+.nav__hamburger__line{
+  margin-left: -30px!important;
+}
+
+}
+
+
+@media screen and (min-width: 414px) and (max-width: 896px) {
+
+  .logo{
+    margin-left: -60px;
   }
+  .nav__hamburger__line{
+    margin-left: -30px!important;
+  }
+
+}
+
+@media (min-width: 1023px){
+  .logo{
+    margin-left: -30px;
+  }
+  .nav__hamburger__line{
+    margin-left: -150px!important;
+  }
+}
 
 /* Navbar Styler Ends */
 
@@ -292,21 +318,26 @@ h2 {
   margin-top: 70px;
 }
 
-.btn-work {
-  background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
+
+/* Button Styles */
+.your-class {
+  margin-top: 21.333px;
   padding: 12px 24px;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   color: #fff;
-  background-color: #474641;
+  background: radial-gradient(
+    circle,
+    rgba(255, 252, 251, 1) 0%,
+    rgba(171, 140, 54, 1) 0%,
+    rgba(131, 120, 84, 1) 100%
+  );
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  margin-top: 20px;
-  max-width: 200px;
+  max-width: 100%;
   text-decoration: none;
 }
-
 
 
 .hero--section--img {
@@ -344,20 +375,27 @@ h2 {
   .hero--section--title {
     margin-top: 20px; /* Adjust the margin for mobile */
   }
-  .btn-work {
-    background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
-    padding: 12px 24px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #474641;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: -100px;
-    max-width: 200px;
-    text-decoration: none;
-  }
+
+/* Button Styles */
+.your-class {
+  margin-top: 21.333px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 252, 251, 1) 0%,
+    rgba(171, 140, 54, 1) 0%,
+    rgba(131, 120, 84, 1) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: 100%;
+  text-decoration: none;
+}
+
 }
 
 @media screen and (min-width: 360px) and (max-width: 800px) {
@@ -365,9 +403,25 @@ h2 {
     margin-top: 20px; /* Adjust the margin for mobile */
     font-size: 16px!important;
   }
-  .btn-work {
-    font-size: 14px;
-  }
+  /* Button Styles */
+.your-class {
+  margin-top: 21.333px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 252, 251, 1) 0%,
+    rgba(171, 140, 54, 1) 0%,
+    rgba(131, 120, 84, 1) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: 100%;
+  text-decoration: none;
+}
 }
 
 @media screen and (min-width: 390px) and (max-width: 844px) {
@@ -635,7 +689,6 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-
 
 
 /* Skills Section Style */
@@ -1395,41 +1448,41 @@ color: gray;
 font-size: 20px;
 font-weight: 300;
 line-height: 30px;
-max-width: 800px; /* Adjust the max-width as needed */
+max-width: 800px; 
 margin-left: auto;
 margin-right: auto;
 text-align: left;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .study-title {
-    font-size: 40px; /* Adjust the font size for mobile screens */
-    line-height: 50px; /* Adjust the line height for mobile screens */
+    font-size: 40px;  
+    line-height: 50px; 
   }
 
   .study-text {
-    font-size: 40px; /* Adjust the font size for mobile screens */
-    line-height: 50px; /* Adjust the line height for mobile screens */
+    font-size: 40px; 
+    line-height: 50px; 
   }
 
   .study--section--para {
-    font-size: 16px; /* Adjust the font size for mobile screens */
-    line-height: 24px; /* Adjust the line height for mobile screens */
-    text-align: center; /* Center the text within the paragraph */
-    max-width: 400px; /* Set a maximum width for better readability */
+    font-size: 16px; 
+    line-height: 24px; 
+    text-align: center;
+    max-width: 400px; 
     margin-left: auto;
     margin-right: auto;
     
   }
 }
-
+ */
 
 
 
 .timeline {
   margin-top: 100px;
   width: 8px;
-  height: 530%!important;
+  height: 6700px;
   background-color: #ccc;
   position: absolute;
   left: 50%;
@@ -1465,15 +1518,16 @@ text-align: left;
   }
 
 }
+
 .study-section-content-box.left {
   float: left;
-  
+
 
 }
 
 .study-section-content-box.right {
   float: right;
-  margin-top: -400px;
+  margin-top: -25px;
  
 }
 
@@ -1508,32 +1562,228 @@ text-align: left;
 .study--detail {
  
 
-
+margin-left: -1px!important;
   color: gray;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  width: 500px; /* Adjust the max-width as needed */
+  width: 250px!important; /* Adjust the max-width as needed */
   margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
 
-@media (max-width: 768px){
-/*Study story css */
+
+
+@media (min-width: 1024px){
+
+
+
+  .timeline {
+    margin-top: 100px;
+    width: 8px;
+    height: 6700px;
+    background-color: #ccc;
+    position: absolute;
+    left: 650px!important;
+    border-radius: 50px;
+    transform: translateX(-50%);
+  }
+  
+  
+  
+  
+  
+  .study-section-content-box {
+    margin-top: 100px;
+    width: 45%;
+    margin: 20px; /* Adjust the margin to create space */
+    padding: 20px;
+    position: relative;
+    
+    animation: fadeIn 1s ease forwards;
+    transition: transform 0.3s ease; /* Added transition for smooth scaling */
+  }
+  
+  .study-section-content-box:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  
+  }
+  
+  .study-section-content-box.left {
+    float: left;
+  
+  
+  }
+  
+  .study-section-content-box.right {
+    float: right;
+    margin-top: -25px;
+   
+  }
+  
+  
+  
+  .study--section--content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.333px;
+  }
+  
+  
+  
+  .study-year{
+    color: white;
+  }
+  .study-place {
+    color: goldenrod;
+    width: 260px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    align-self: stretch;
+    
+  }
+  .study-result{
+    color: white;
+    font-weight: 500;
+  }
+  .study--detail {
+   
+  
+  margin-left: -1px!important;
+    color: gray;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    width: 250px!important; /* Adjust the max-width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+  
+  
+
+
+}
+
+/* @media screen and (max-width: 1023px) and (min-width: 768px) {  */
+  @media (max-width: 767px){
+
+
+  .timeline {
+    margin-top: 100px;
+    width: 8px;
+    height: 7500px!important;
+    background-color: #ccc;
+    position: absolute;
+    left: 50px!important;
+    border-radius: 50px;
+    transform: translateX(-50%);
+  }
+  
+  .study-story{
+    margin-top: 100px;
+     border-radius: 2rem;
+    
+     width: 100%; 
+     margin-left: auto;
+     margin-right: auto;
+     height: auto;
+     text-align: center;
+     background-image: url('..//public/img/story.jpeg');
+     background-size: cover; 
+     background-position: center; 
+     background-repeat: no-repeat;
+     position: relative;
+     overflow: hidden;
+   
+   }
+   
+   .study-story::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5); 
+   }
+   
+   .study-story-content{
+     margin-top: 100px;
+      color:white;
+      border-radius: 2rem;
+      width: 70%; 
+      margin-left: auto;
+      margin-right: auto;
+      height: 60vh;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    
+      
+    }
+   
+   .story-para{
+   color:#aaadab;
+   font-size: 17px!important;
+   font-weight: 800!important;
+   line-height: 30px;
+   
+   }
+   
+   .story-button {
+     margin-top: 50px!important;
+     padding: 12px 24px;
+     font-size: 1rem;
+     font-weight: 500;
+     color: #fff;
+     background: radial-gradient(
+       circle,
+       rgba(255, 252, 251, 1) 0%,
+       rgba(171, 140, 54, 1) 0%,
+       rgba(131, 120, 84, 1) 100%
+     );
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     max-width: 100%;
+     text-decoration: none;
+   }
+   .story-button:hover{
+     background: goldenrod;
+     color: gray;
+   }
+   
+
+}
+/* @media (max-width: 768px){
+
 
 .study-story{
  margin-top: 100px;
   border-radius: 2rem;
  
-  width: 100%; /* Adjust the max-width as needed */
+  width: 100%; 
   margin-left: auto;
   margin-right: auto;
   height: auto;
   text-align: center;
   background-image: url('..//public/img/story.jpeg');
-  background-size: cover; /* Adjust the size to cover the entire section */
-  background-position: center; /* Adjust the position if needed */
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
@@ -1547,20 +1797,20 @@ text-align: left;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .study-story-content{
   margin-top: 100px;
    color:white;
    border-radius: 2rem;
-   width: 90%; /* Adjust the max-width as needed */
+   width: 80%; 
    margin-left: auto;
    margin-right: auto;
    height: 90vh;
    text-align: center;
    position: relative;
-   z-index: 1; /* Ensure content is above the pseudo-element */
+   z-index: 1;
  
    
  }
@@ -1596,8 +1846,8 @@ line-height: 30px;
   color: gray;
 }
 
-}
-@media screen and (min-width: 390px) and (max-width: 844px) { 
+} */
+/* @media screen and (min-width: 390px) and (max-width: 844px) { 
 
 
   .timeline {
@@ -1607,21 +1857,25 @@ line-height: 30px;
   .study--section--content{
     margin-left: -99px;
   }
-  .study--detail {
+ 
+   .study--detail {
     margin-left: 2px;
-    max-width: 300px; /* Adjust the max-width as needed */
+    max-width: 300px; 
    
   }
 
+   
   .study-story{
     margin-top: 10px;
      border-radius: 2rem;
-     width:150%; /* Adjust the max-width as needed */
+     width:150%; 
      margin-left: -60px;
      margin-right: auto;
      height: 90vh!important;
    
    }
+
+
    .study-section-content-box.left {
     margin-top: 0;
     margin-right: -60px!important;
@@ -1631,13 +1885,12 @@ line-height: 30px;
     margin-top: 0;
     margin-right: -50px;
   }
+
    
-     }
-  
+     } */
 
 
-/* galaxy A12 */
-     @media screen and (min-width: 360px) and (max-width: 800px) {
+     /* @media screen and (min-width: 360px) and (max-width: 800px) {
       .timeline {
         left: 20px!important;
         height: 1000%!important;
@@ -1650,7 +1903,7 @@ line-height: 30px;
      
       .study--detail {
          margin-left: -1px;
-         max-width: 300px; /* Adjust the max-width as needed */
+         max-width: 300px; 
         
        }
        .study-section-content-box.left {
@@ -1667,14 +1920,14 @@ line-height: 30px;
         margin-top: 100px;
          border-radius: 2rem;
         
-         width: 150%; /* Adjust the max-width as needed */
+         width: 150%;
          margin-left: -50px;
          margin-right: auto;
          height: auto;
          text-align: center;
          background-image: url('..//public/img/story.jpeg');
-         background-size: cover; /* Adjust the size to cover the entire section */
-         background-position: center; /* Adjust the position if needed */
+         background-size: cover; 
+         background-position: center; 
          background-repeat: no-repeat;
          position: relative;
          overflow: hidden;
@@ -1688,20 +1941,20 @@ line-height: 30px;
          left: 0;
          width: 100%;
          height: 100%;
-         background-color: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+         background-color: rgba(0, 0, 0, 0.5); 
        }
        
        .study-story-content{
          margin-top: 100px;
           color:white;
           border-radius: 2rem;
-          width: 80%; /* Adjust the max-width as needed */
+          width: 80%; 
           margin-left: auto;
           margin-right: auto;
           height: 90vh;
           text-align: center;
           position: relative;
-          z-index: 1; /* Ensure content is above the pseudo-element */
+          z-index: 1; 
         
           
         }
@@ -1715,56 +1968,59 @@ line-height: 30px;
        }
        
 
-     }
-
-
-
-
-/* Add media query for iphone  screens */
-@media screen and (min-width: 414px) and (max-width: 896px) {
-
-
-  .timeline {
-    left: 20px!important;
-    height: 870%!important;
-  }
-  .study--section--content{
-    margin-left: -100px;
-  }
-    
- 
-  .study--detail {
-     margin-left: -1px;
-     max-width: 300px; /* Adjust the max-width as needed */
-    
-   }
-   .study-section-content-box.left {
-    margin-top: 0;
-    margin-right: -60px!important;
-    margin-left: 10px;
-  }
-  .study-section-content-box.right {
-    margin-top: 0;
-    margin-right: -50px;
-  }
-
-
- }
+     } */
 
 
 
 
 /* Add media query for google pixel5 screens */
 
-@media screen and (min-width: 393px) and (max-width: 851px) {
-  .timeline {
-    left: 30px;
-    height: 970%!important;
-  }
+     /* @media screen and (min-width: 393px) and (max-width: 851px) {
+      .timeline {
+        left: 30px;
+        height: 970%!important;
+      }
 
 
- }
+     } */
 
+
+/* Add media query for iphone  screens */
+     /* @media screen and (min-width: 414px) and (max-width: 896px) {
+
+
+      .timeline {
+        left: 20px!important;
+        height: 960%!important;
+      }
+
+      .study--section--content{
+        margin-left: -100px;
+      }
+        
+     
+      .study--detail {
+         margin-left: -1px;
+         max-width: 300px; 
+        
+       }
+       .study-section-content-box.left {
+        margin-top: 0;
+        margin-right: -60px!important;
+        margin-left: 10px;
+      }
+      .study-section-content-box.right {
+        margin-top: 0;
+        margin-right: -50px;
+      }
+    
+
+     } */
+
+ 
+
+
+  
 /* Add media query for smaller screens */
 @media (max-width: 768px) {
   .timeline {
@@ -1776,7 +2032,7 @@ line-height: 30px;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  max-width: 300px; /* Adjust the max-width as needed */
+  max-width: 300px; 
  
   text-align: left;  
 }
@@ -1824,6 +2080,8 @@ line-height: 30px;
   }
 }
 
+
+
 /* core values  */
 
 .core--section {
@@ -1856,6 +2114,7 @@ line-height: 30px;
   max-width: max-content;
   padding: 3px 10px;
   color: white;
+ 
   margin-top: 10px;
   font-size: 40px;
   font-weight: 700;
@@ -1901,7 +2160,7 @@ line-height: 30px;
     font-weight: 700;
     line-height: 60px;
     margin-left: -20px!important;
-
+   
   }
   
   .core-text {                                                                           
@@ -1909,7 +2168,6 @@ line-height: 30px;
     font-weight: 700;
     line-height: 60px;
     margin-left: -20px;
-
   }
   .core--section--card {
      width: 120%;
@@ -1919,6 +2177,31 @@ line-height: 30px;
 
 }
 
+
+
+@media screen and (min-width: 360px) and (max-width: 800px) {
+  .core-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: -30px!important;
+   
+  }
+  
+  .core-text {                                                                           
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-left: -30px;
+  }
+  .core--section--card {
+    width: 120%;
+   height: 450px;
+   margin-left: -50px;
+ }
+
+
+}
 @media screen and (min-width: 414px) and (max-width: 896px) {
   .core-title{
     font-size: 50px;
@@ -1943,7 +2226,6 @@ line-height: 30px;
 
 
 }
-
 
 .skills--section--para {
   color: gray;
@@ -2070,10 +2352,8 @@ line-height: 30px;
   gap: 42.6px;
   grid-template-columns: repeat(3, 1fr); /* Update to three columns */
   grid-template-rows: repeat(2, 1fr);    /* Add three rows */
-
-  grid-auto-rows: auto; /* Set minimum height for additional rows */
-  height: auto; /* Set height to auto or specify a fixed height */
-
+  grid-auto-rows: auto;
+  height: auto;
 }
 
 .core--section--card {
@@ -2085,23 +2365,22 @@ line-height: 30px;
   flex: 1 0 0;
   box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.1);
   background: #474641;
-
-  height: 450px;
+  height: auto; /* Set height to auto for responsiveness */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-bottom 0.3s ease;
 }
 
 .core--section--card:hover {
-  transform: scale(0.9); /* Scale down */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transform: scale(0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-bottom: 4px solid;
-  border-image: linear-gradient(to right, #FFD700, #CD853F); /* Gradient color */
-  border-image-slice: 1; /* Ensure the entire border is covered by the gradient */
+  border-image: linear-gradient(to right, #FFD700, #CD853F);
+  border-image-slice: 1;
 }
-
 
 .core--section--card:hover .core--section--description {
   color: goldenrod;
 }
+
 .core--section--img {
   display: flex;
   padding: 13.3px;
@@ -2111,18 +2390,19 @@ line-height: 30px;
   border-radius: 10.6px;
   background: #2b2622;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-}   
+}
+
 .core--section--card--content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   align-self: stretch;
-  
 }
+
 .core-title {
   color: white;
-   font-size: 35px;
+  font-size: 35px;
   font-weight: 900;
   line-height: 30px;
   align-items: center;
@@ -2134,9 +2414,9 @@ line-height: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  max-width: 309px; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center the text and leave margins from both sides */
-  text-align: center; /* Center the text within the max-width */
+  max-width: 309px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Responsive CSS for Mobile Screens */
@@ -2175,6 +2455,8 @@ line-height: 30px;
 
 
 /* ................................. */
+
+
 
 /* serve Section Style */
 .serve--section {
@@ -2242,8 +2524,8 @@ line-height: 30px;
 .last-image {
   height: auto !important;
   width: auto;
-  margin-top: -10rem; /* Adjust as needed */
-  margin-left: 0;
+  margin-top:2rem; /* Adjust as needed */
+  margin-left: -10px;
 }
 
 /* Button Styles */
@@ -2265,7 +2547,9 @@ line-height: 30px;
   max-width: 100%;
   text-decoration: none;
 }
-
+@media (min-width: 1023px){
+  
+}
 /* Add a new CSS rule for mobile screens */
 @media screen and (max-width: 768px) {
   .serve--section {
@@ -2495,7 +2779,38 @@ line-height: 30px;
   margin-right: auto;
   text-align: left;
 }
+@media (min-width: 1023px){
+  .btn-phone {
+    max-width: 80%!important;
+    width: 100%!important;
+   
+    gap: 30px;
 
+    /* this is right code sana  */
+  }
+
+  .contact--form--container {
+    justify-content: center;
+    align-items: center;
+    gap: 42.6px;
+ 
+ 
+   
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .two-columns {
+    display: flex;
+    gap: 100px!important;
+    width: 100%;
+  }
+  
+  .column {
+    flex: 1;
+  
+  }
+  
+
+}
 @media screen and (max-width: 768px) {
   .contact-title{
   display: none;
@@ -2521,22 +2836,33 @@ line-height: 30px;
     grid-template-columns: 1fr; /* Change to a single column for mobile screens */
     margin-top: -350px;
   }
-  .col-title{
-     margin-left: -50px;
+  .col-title {
+    margin-left: -50px;
   }
-  .col-reach{
+  .col-reach {
     margin-left: -50px;
   }
   .btn-phone {
-  /* max-width: 85%; */
-    /* Add space between icon and text */
-    gap: 10px;
-  }
+    max-width: 80% !important;
+    width: 100% !important;
+    
+    gap: 30px;
 
-  
+    /* this is right code sana  */
+  }
 }
 
-@media screen and (min-width: 390px) and (max-width: 844px) { 
+/* @media screen and (max-width: 768px) {
+  .btn-phone {
+    max-width: 55%;
+    width: 100%;
+    
+      gap: 10px;
+    }
+  
+} */
+
+/* @media screen and (min-width: 390px) and (max-width: 844px) { 
 
   .col-title{
     margin-left: -70px;
@@ -2548,7 +2874,7 @@ line-height: 30px;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  max-width: 800px; /* Adjust the max-width as needed */
+  max-width: 800px; 
   margin-left: -54px!important;
 
 }
@@ -2578,12 +2904,14 @@ margin-left: -50px;
     font-size: 14px!important;
     }
   
-}
 
 
 
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
+} */
+
+
+/* @media screen and (min-width: 360px) and (max-width: 800px) {
   .col-title{
     margin-left: -70px;
  }
@@ -2594,7 +2922,7 @@ margin-left: -50px;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
-  max-width: 800px; /* Adjust the max-width as needed */
+  max-width: 800px; 
   margin-left: -54px!important;
 
 }
@@ -2609,7 +2937,7 @@ margin-left: -50px;
   margin-bottom: 10px; 
   text-align: center!important;
   position: relative;
-  overflow: hidden; /* Hide overflowing content */
+  overflow: hidden;
 
 
 }
@@ -2640,10 +2968,9 @@ margin-left: -50px;
     }
   
 
-}
+} */
 
-@media screen and (min-width: 414px) and (max-width: 896px) {
-  /* Your styles for mobile screens between for iphone 414px and 896px */
+/* @media screen and (min-width: 414px) and (max-width: 896px) {
 
   .btn-phone {
     margin-top: 10px;
@@ -2661,9 +2988,10 @@ margin-left: -50px;
     
     }
   
-}
+} */
 
-@media screen and (min-width: 393px) and (max-width: 851px) {
+
+/* @media screen and (min-width: 393px) and (max-width: 851px) {
 
   .btn-phone {
     margin-top: 10px;
@@ -2682,9 +3010,7 @@ margin-left: -50px;
     }
   
   }
-
-
-
+ */
 
 
 .two-columns {
@@ -2805,7 +3131,7 @@ width: 100%;
 
 
 .btn-phone {
-  display: flex;
+    display: flex;
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
@@ -2817,7 +3143,10 @@ background-color: #474641;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  width: 100%;
+  max-width: 80%;
+  width: 56%;
+ 
+  gap: 30px;
   height: 100px;
   text-decoration: none;
 
@@ -2827,9 +3156,9 @@ background-color: #474641;
 .phone-link{
 color: white;
 text-decoration: none;
-
+background-color: red;
 margin-top: 55px;
-margin-left: -60px;
+margin-left: -40px;
 font-size: 13px;
 width: 100%;
 
@@ -2851,6 +3180,7 @@ width: 100%;
   background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
   border-radius: 50px;
   width: 70px;
+
   height: 70px;
   margin-left: -70px;
 }
@@ -2919,6 +3249,7 @@ width: 100%;
   align-items: center;
   gap: 42.6px;
  
+ 
   grid-template-columns: repeat(2, 1fr);
 }
 .container {
@@ -2926,6 +3257,7 @@ width: 100%;
   grid-template-columns: repeat(2, auto);
   column-gap: 32px;
   row-gap: 32px;
+
 }
 .contact--label {
   display: flex;
@@ -3018,8 +3350,6 @@ input[type="checkbox"] {
   
 
 }
-
-
 @media screen and (min-width: 360px) and (max-width: 800px) {
 
   .divider {
@@ -3028,7 +3358,6 @@ input[type="checkbox"] {
   }
 
 }
-
 @media screen and (min-width: 414px) and (max-width: 896px) {
 
   .divider {
@@ -3036,6 +3365,16 @@ input[type="checkbox"] {
       margin-top: -14px!important;
   }
 }
+@media (min-width: 1023px){
+  .divider {
+   
+    margin-top: -70px!important;
+    height: 2.33px;
+    width: 119.3%;
+    background: goldenrod;
+  }
+}
+
 .footer--container {
   display: flex;
   padding: 150px 85.333px; /* Adjust the padding to increase the height */
@@ -3043,13 +3382,14 @@ input[type="checkbox"] {
   background-color: #242323!important;
   align-items: center;
   align-self: stretch;
+
 }
 
 
 .divider {
   margin-left: -85px;
-  margin-top: -150px;
-  height: 2.333px;
+  margin-top: -150px!important;
+  height: 2.33px;
   width: 114.3%;
   background: goldenrod;
 }

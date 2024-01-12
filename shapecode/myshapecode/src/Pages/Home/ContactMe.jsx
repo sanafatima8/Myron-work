@@ -45,18 +45,18 @@ export default function ContactMe() {
 
 <br />
 
-<button className="btn-phone">
-  <div className="p-icon">   
+<button className="btn-email">
+  <div className="e-icon">   
  
     <FontAwesomeIcon 
               icon={ faVolumeControlPhone} 
               className=" fa-volume-control-phone" 
               />
   </div>
-  <div className="phone-content">
-    Phone
+  <div className="email-content">
+    Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <a href="tel:+19252557535" className="phone-link">+1(925)-255-7535</a>
+    <a href="tel:+19252557535" className="email-link">+1(925)-255-7535</a>
   </div>
 </button>
 

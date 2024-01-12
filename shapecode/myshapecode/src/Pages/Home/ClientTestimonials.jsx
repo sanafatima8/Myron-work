@@ -1,25 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import data from "../../data/index.json";
-import './client.css'; // Import a separate CSS file for styling
+import './client.css';
 
 export default function MySkills() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const sliderRef = useRef();
 
   useEffect(() => {
     const timer = setInterval(() => {
       const nextIndex = (activeIndex + 1) % data?.client?.length;
       setActiveIndex(nextIndex);
+      sliderRef.current.slickGoTo(nextIndex);
     }, 5000);
 
     return () => clearInterval(timer);
   }, [activeIndex]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '25%',
+    beforeChange: (current, next) => setActiveIndex(next),
+  };
 
   return (
     <section className="client--section" id="mySkills">
       <div className="portfolio-client-container">
         <p className="client-upper-p">Client Testimonials</p>
         <br />
-        <h2 className="client-title">
+        <h2 className="client-subhead">
           Check out the &nbsp;<span className='client-text'>Feedback</span>
           <br />
           from People I've worked with
@@ -30,19 +46,15 @@ export default function MySkills() {
           people say about me and my work
         </p>
       </div>
-
-      <div className="client--section--container">
-        <div className="elementor-carousel">
+  
+      <div className="carousel-wrapper">
+        <Slider ref={sliderRef} {...settings}>
           {data?.client?.map((item, index) => (
-            <div
-              key={index}
-              className={`client--section--card ${activeIndex === index ? 'active' : 'inactive'}`}
-              onMouseEnter={() => setActiveIndex(index)}
-            >
-              <div className="client--section--img">
-                <img src={item.src} alt="Product Chain" />
-              </div>
+            <div key={index} className={`client--section--card ${activeIndex === index ? 'active' : ''}`}>
               <div className="client--section--card--content">
+                <div className="client--section--img">
+                  <img src={item.src} alt="Product Chain" />
+                </div>
                 <h3 className="client-title">{item.title}</h3>
                 <p className='client-position'>{item.position}</p>
                 <p className='client-company'>{item.company}</p>
@@ -50,18 +62,9 @@ export default function MySkills() {
               </div>
             </div>
           ))}
-        </div>
-      </div>
-
-      <div className="dots-container">
-        {data?.portfolio?.map((_, index) => (
-          <div
-            key={index}
-            className={`dot ${activeIndex === index ? 'active' : ''}`}
-            onMouseEnter={() => setActiveIndex(index)}
-          ></div>
-        ))}
+        </Slider>
       </div>
     </section>
   );
+  
 }

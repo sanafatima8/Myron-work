@@ -14,7 +14,7 @@ export default function HeroSection() {
           </h1>
        </div>
        <div className="center-container">
-       <a href="#study" className="your-button-class">EXPLORE MY WORKS</a>
+       <a href="#study" className="your-class">EXPLORE MY WORKS</a>
       </div>
       </div>
       

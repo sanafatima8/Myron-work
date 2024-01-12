@@ -40,7 +40,7 @@ export default function MySkills() {
         </p>
 
         {/* Horizontal line separating the timeline */}
-        <div className="timeline animate-on-scroll"></div>
+        <div className="timeline"></div>
 
         {/* Study section content box on the left side */}
         <div className="study-section-content-box left ">
