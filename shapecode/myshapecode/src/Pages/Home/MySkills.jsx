@@ -17,8 +17,9 @@ export default function MySkills() {
         {data?.skills?.map((item, index) => (
           <div key={index} className="skills--section--card">
             <div className="skills--section--img">
+            <img src={item.src} alt={item.title} />
 
-              {item.id === '1' && (
+              {/* {item.id === '1' && (
               <lord-icon
                 src="https://cdn.lordicon.com/xirobkro.json"
                 trigger="hover"
@@ -35,7 +36,7 @@ export default function MySkills() {
                  style={{ width: '100px', height: '100px' }}
                 
              />
-            )}
+            )} */}
 
             </div>
             <div className="skills--section--card--content">

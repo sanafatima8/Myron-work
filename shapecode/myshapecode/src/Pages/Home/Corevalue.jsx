@@ -26,8 +26,9 @@ export default function MySkills() {
         {data?.core?.map((item, index) => (
           <div key={index} className="core--section--card">
             <div className="core--section--img">
+            <img src={item.src} alt={item.title} />
 
-              {item.id === '1' && (
+              {/* {item.id === '1' && (
               <FontAwesomeIcon 
               icon={faLightbulb} 
               className="fa-lightbulb" />
@@ -73,7 +74,7 @@ export default function MySkills() {
               className="fa-cogs" />
 
 
-            )} 
+            )}  */}
 
 
             </div>
