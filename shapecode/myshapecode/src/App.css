@@ -12,6 +12,20 @@ body {
   
 
 }
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  overflow-x: hidden!important;
+}
+
+
+
+
+
 h1,
 h2,
 h3,
@@ -57,6 +71,7 @@ p {
   color: var(--white);
   background: linear-gradient(265deg, rgba(244,210,145,1) 0%, rgba(160,118,50,1) 53%);
    /* border: 1px solid var(--primary); */
+   height: auto;
 }
 .btn-outline-primary:hover {
   color: black;
@@ -233,7 +248,23 @@ h2 {
     margin-left: -60px;
   }
   .nav__hamburger__line{
-    margin-left: -30px!important;
+    margin-left: -60px!important;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 85.333px;
+    background: #2b2622;
+    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 5px solid goldenrod; /* Set the color of the line */
+    overflow: hidden;
+      z-index: 1000; /* Adjust the value based on your design and other z-index values */
+    
   }
   
   }
@@ -326,12 +357,8 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
-  background: radial-gradient(
-    circle,
-    rgba(255, 252, 251, 1) 0%,
-    rgba(171, 140, 54, 1) 0%,
-    rgba(131, 120, 84, 1) 100%
-  );
+  background: linear-gradient(265deg, rgba(244,210,145,1) 0%, rgba(160,118,50,1) 53%);
+
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -538,7 +565,6 @@ h2 {
 @media (min-width: 1921px){
 
   .small-image {
-    
     margin-top: 5rem!important; /* Adjust as needed */
   }
 }
@@ -717,7 +743,7 @@ h2 {
 
 .section-title{
   color: white;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 77px;
   margin-bottom: 10px; 
@@ -734,9 +760,9 @@ h2 {
   max-width: max-content;
   padding: 3px 10px;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
-  line-height: 77px;
+  line-height: 55px;
   text-align: center !important;
   display: inline-block; /* Make it an inline block to use text-align */
   white-space: nowrap; /* Prevent line breaks */
@@ -921,7 +947,7 @@ h2 {
 
 .about-title{
 color: white;
-font-size: 60px;
+font-size: 50px;
 font-weight: 700;
 line-height: 77px;
 margin-bottom: 10px; 
@@ -937,9 +963,9 @@ background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50
 max-width: max-content;
 padding: 3px 10px;
 color: white;
-font-size: 60px;
+font-size: 50px;
 font-weight: 700;
-line-height: 77px;
+line-height: 55px;
 text-align: center !important;
 display: inline-block; /* Make it an inline block to use text-align */
 white-space: nowrap; /* Prevent line breaks */
@@ -1156,7 +1182,7 @@ margin-left: -80px;
   align-items: center;
   width: 30px;
   height: 50px;
-  margin-left: 10px;
+  margin-left: -3px;
 }
 .circle-image {
   width: 40px; /* Original width of the image */
@@ -1167,7 +1193,7 @@ margin-left: -80px;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 .text-after-circle {
-  margin-left: -10px; /* Adjust the margin to space the text from the circle */
+  margin-left: -12px; /* Adjust the margin to space the text from the circle */
   font-size: 15px; /* Adjust the font size of the text */
   margin-top: 20px;
   color: white;
@@ -1190,7 +1216,7 @@ margin-left: -80px;
   align-items: center;
   width: 10%;
   height: 10%;
-  margin-left: -1px;
+  margin-left: -11px;
   
 }
 .circle-app-image {
@@ -1325,7 +1351,7 @@ margin-left: -80px;
   align-items: center;
   width: 60px;
   height: 100px;
-  margin-left: -1px;
+  margin-left: -10px;
   
 }
 .circle-dart-image {
@@ -1344,8 +1370,8 @@ margin-left: -80px;
 
 }
 .a-dart-one{
-  margin-left: 10px; /* Adjust the margin to space the text from the circle */
-  font-size: 15px; /* Adjust the font size of the text */
+  margin-left: 1px; /* Adjust the margin to space the text from the circle */
+  font-size: 144px; /* Adjust the font size of the text */
   margin-top: -20px;
   background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
   max-width: max-content;
@@ -1356,7 +1382,10 @@ margin-left: -80px;
 
 }
 
+.box-heading-l{
+  font-size: 13px;
 
+}
 /* colum right starts */
 .column-right {
   margin-left: 20px; /* Margin to separate the columns */
@@ -1414,14 +1443,13 @@ margin-left: -80px;
 
 .study-title{
 color: white;
-font-size: 60px;
+font-size: 50px;
 font-weight: 700;
 line-height: 77px;
 margin-bottom: 10px; 
 text-align: center!important;
 position: relative;
 overflow: hidden; /* Hide overflowing content */
-
 
 }
 
@@ -1430,9 +1458,9 @@ background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50
 max-width: max-content;
 padding: 3px 10px;
 color: white;
-font-size: 60px;
+font-size: 50px;
 font-weight: 700;
-line-height: 77px;
+line-height: 55px;
 text-align: center !important;
 display: inline-block; /* Make it an inline block to use text-align */
 white-space: nowrap; /* Prevent line breaks */
@@ -1463,6 +1491,79 @@ margin-left: auto;
 margin-right: auto;
 text-align: left;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+  .study-title {
+    font-size: 40px;  
+    line-height: 50px; 
+  }
+
+  .study-text {
+    font-size: 40px; 
+    line-height: 50px; 
+  }
+
+  .study--section--para {
+    font-size: 16px; 
+    line-height: 24px; 
+    text-align: center;
+    max-width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .study-section-content-box.left {
+    float: left;
+    margin-left: -10px!important;
+    
+  
+  
+  }
+  
+  .study-section-content-box.right {
+    float: right;
+    margin-top: -25px;
+    margin-right:  5px!important;
+   
+  }
+
+}
+@media only screen and (max-width: 1297px) {
+   
+  .timeline {
+    margin-top: 100px;
+    width: 8px;
+    height: 4420px!important;
+    background-color: #ccc;
+    position: absolute;
+  margin-left: 20px;
+    
+  }
+  
+
+
+}
+
+@media only screen and (max-width: 1889px) {
+   
+  .timeline {
+    margin-top: 100px;
+    width: 8px;
+    height: 4420px!important;
+    background-color: #ccc;
+    position: absolute;
+  margin-left: 20px;
+    
+  }
+  
+
+
+}
+
+
+
 
 /* @media (max-width: 767px) {
   .study-title {
@@ -1507,7 +1608,8 @@ text-align: left;
 .study-section-content-box {
   margin-top: 100px;
   width: 45%;
-  margin: 20px; /* Adjust the margin to create space */
+  margin: 20px; /* A
+  djust the margin to create space */
   padding: 20px;
   position: relative;
   
@@ -1570,9 +1672,8 @@ text-align: left;
   font-weight: 500;
 }
 .study--detail {
- 
 
-margin-left: -1px!important;
+  margin-left: -1px!important;
   color: gray;
   font-size: 15px;
   font-weight: 300;
@@ -1710,7 +1811,7 @@ margin-left: -1px!important;
   .study--detail {
    
   
-  margin-left: -1px!important;
+    margin-left: -1px!important;
     color: gray;
     font-size: 15px;
     font-weight: 300;
@@ -1828,10 +1929,10 @@ margin-left: -1px!important;
     margin-top: 100px;
      border-radius: 2rem;
     
-     width: 130%; 
+     width: auto; 
      margin-left: -26px;
      margin-right: auto;
-     height: auto;
+     height: 80vh;
      text-align: center;
      background-image: url('..//public/img/story.jpeg');
      background-size: cover; 
@@ -1848,7 +1949,7 @@ margin-left: -1px!important;
       width: 80%; 
       margin-left: auto;
       margin-right: auto;
-      height: 120vh;
+      height: 100vh;
       text-align: center;
       position: relative;
       z-index: 1;
@@ -2164,6 +2265,8 @@ line-height: 30px;
   }
 }
 
+
+
 @media screen and (min-width: 769px) {
   .study-story {
     display: none;
@@ -2188,7 +2291,7 @@ line-height: 30px;
 
 .core-title{
   color: white;
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 77px;
   margin-bottom: 10px; 
@@ -2208,7 +2311,7 @@ line-height: 30px;
   margin-top: 10px;
   font-size: 40px;
   font-weight: 700;
-  line-height: 77px;
+  line-height: 55px;
   text-align: center !important;
   display: inline-block; /* Make it an inline block to use text-align */
   white-space: nowrap; /* Prevent line breaks */
@@ -2625,12 +2728,8 @@ line-height: 30px;
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
-  background: radial-gradient(
-    circle,
-    rgba(255, 252, 251, 1) 0%,
-    rgba(171, 140, 54, 1) 0%,
-    rgba(131, 120, 84, 1) 100%
-  );
+  background: linear-gradient(265deg, rgba(244,210,145,1) 0%, rgba(160,118,50,1) 53%);
+
   border: none;
   border-radius: 50px;
   cursor: pointer;

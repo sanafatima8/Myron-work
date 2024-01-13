@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content=""
@@ -24,6 +24,17 @@
     <title> logoipsum'</title>
   </head>
   <body>
+
+
+    <script>
+      document.addEventListener('dragstart', function(event) {
+          event.preventDefault();
+      });
+      // Your other JavaScript code goes here
+  </script>
+
+
+
     <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
     <div id="root"></div>
     <!--
