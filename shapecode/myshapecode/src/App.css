@@ -2385,8 +2385,8 @@ line-height: 30px;
 
 @media screen and (max-width: 600px) {
   .core-title{
-    font-size: 22px!important;
-    line-height: 60px;
+    font-size: 27px!important;
+    line-height: 55px;
     margin: 10px;
   
    
@@ -2413,7 +2413,8 @@ line-height: 30px;
     font-weight: 700;
     line-height: 60px;
     margin-left: -20px!important;
-    height:max-content;
+    height:50px!important;
+    padding-top: 5px;
    
   }
 
