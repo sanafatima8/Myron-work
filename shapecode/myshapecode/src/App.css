@@ -3670,7 +3670,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px){
   .divider {
-       margin-top: -50px!important;
+       margin-top: -70px!important;
        width:180.3%!important;
        
   
@@ -3687,7 +3687,7 @@ input[type="checkbox"] {
     
   }
   
-  @media only screen and (max-width: 360px){
+  /* @media only screen and (max-width: 360px){
     .divider {
       margin-top: -50px!important;
       width:185.3%!important;
@@ -3704,17 +3704,17 @@ input[type="checkbox"] {
   }
   
   
-  }
+  } */
 
 
-  @media screen and (min-width: 414px) and (max-width: 896px) {
+  /* @media screen and (min-width: 414px) and (max-width: 896px) {
 
     .divider {
       width:167.3%!important;
         margin-top: -50px!important;
     }
   }
-  
+   */
 .footer--container {
   display: flex;
   padding: 150px 85.333px; /* Adjust the padding to increase the height */
@@ -3880,9 +3880,9 @@ input[type="checkbox"] {
     padding: 0;
     align-items: center;
   }
-  .divider {
+  /* .divider {
     margin: 20px;
-  }
+  } */
 }
 
 /* Hamburger menu  */
