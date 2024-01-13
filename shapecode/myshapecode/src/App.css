@@ -3610,7 +3610,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px){
   .divider {
-       margin-top: -70px!important;
+       margin-top: -50px!important;
        width:180.3%!important;
        
   
@@ -3629,7 +3629,7 @@ input[type="checkbox"] {
   
   @media only screen and (max-width: 360px){
     .divider {
-      margin-top: -70px!important;
+      margin-top: -50px!important;
       width:185.3%!important;
        
      
@@ -3651,7 +3651,7 @@ input[type="checkbox"] {
 
     .divider {
       width:167.3%!important;
-        margin-top: -70px!important;
+        margin-top: -50px!important;
     }
   }
   
