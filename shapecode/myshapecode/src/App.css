@@ -250,22 +250,7 @@ h2 {
   .nav__hamburger__line{
     margin-left: -60px!important;
   }
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 85.333px;
-    background: #2b2622;
-    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    border-bottom: 5px solid goldenrod; /* Set the color of the line */
-    overflow: hidden;
-      z-index: 1000; /* Adjust the value based on your design and other z-index values */
-    
-  }
+
   
   }
 
@@ -1122,7 +1107,7 @@ margin-left: -80px;
   color: whitesmoke;
 
   margin-top: 5px;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 100;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -1182,7 +1167,7 @@ margin-left: -80px;
   align-items: center;
   width: 30px;
   height: 50px;
-  margin-left: -3px;
+  margin-left: 10px;
 }
 .circle-image {
   width: 40px; /* Original width of the image */
@@ -1193,7 +1178,7 @@ margin-left: -80px;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 .text-after-circle {
-  margin-left: -12px; /* Adjust the margin to space the text from the circle */
+  margin-left: -10px; /* Adjust the margin to space the text from the circle */
   font-size: 15px; /* Adjust the font size of the text */
   margin-top: 20px;
   color: white;
@@ -1216,7 +1201,7 @@ margin-left: -80px;
   align-items: center;
   width: 10%;
   height: 10%;
-  margin-left: -11px;
+  margin-left: -1px;
   
 }
 .circle-app-image {
@@ -1351,7 +1336,7 @@ margin-left: -80px;
   align-items: center;
   width: 60px;
   height: 100px;
-  margin-left: -10px;
+  margin-left: -1px;
   
 }
 .circle-dart-image {
@@ -1371,7 +1356,7 @@ margin-left: -80px;
 }
 .a-dart-one{
   margin-left: 1px; /* Adjust the margin to space the text from the circle */
-  font-size: 144px; /* Adjust the font size of the text */
+  font-size: 15px; /* Adjust the font size of the text */
   margin-top: -20px;
   background: linear-gradient(265deg, rgba(244, 210, 145, 1) 0%, rgba(160, 118, 50, 1) 53%);
   max-width: max-content;
@@ -1382,10 +1367,7 @@ margin-left: -80px;
 
 }
 
-.box-heading-l{
-  font-size: 13px;
 
-}
 /* colum right starts */
 .column-right {
   margin-left: 20px; /* Margin to separate the columns */
@@ -1920,8 +1902,27 @@ text-align: left;
 }
 
 
+@media only screen and (max-width: 327px)  {
+  .study-story{
+   
+     width: 170%!important; 
+     margin-left: -50px!important;
+     height: 80vh!important;
+   
+   
+   }
+   .study-story-content{
+   
+      width: auto; 
+      
+      height: 110vh!important;
+    
+    
+      
+    }
+   
 
-
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -1949,7 +1950,7 @@ text-align: left;
       width: 80%; 
       margin-left: auto;
       margin-right: auto;
-      height: 100vh;
+      height: 120vh;
       text-align: center;
       position: relative;
       z-index: 1;

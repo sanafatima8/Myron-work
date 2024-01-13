@@ -26,7 +26,7 @@ export default function MySkills() {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '30%',
+    centerPadding: '25%',
     beforeChange: (current, next) => setActiveIndex(next),
   };
 
