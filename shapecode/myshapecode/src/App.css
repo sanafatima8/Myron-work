@@ -3670,7 +3670,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 600px){
   .divider {
-       margin-top: -70px!important;
+       margin-top: -150px!important;
        width:180.3%!important;
        
   
@@ -3679,9 +3679,9 @@ input[type="checkbox"] {
   
     .footer-para{
       color: white;
-      margin-top: 20px;
-      
+      margin-top: 100px!important;
       width: 220px;
+      height: 10px!important;
     
     }
     
@@ -3841,8 +3841,8 @@ input[type="checkbox"] {
   }
   .skills--section,
   .testimonial--section,
-  .contact--section,
-  .footer--container {
+  .contact--section
+{
     gap: 20px;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -3880,9 +3880,9 @@ input[type="checkbox"] {
     padding: 0;
     align-items: center;
   }
-  /* .divider {
+  .divider {
     margin: 20px;
-  } */
+  } 
 }
 
 /* Hamburger menu  */
