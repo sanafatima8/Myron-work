@@ -2386,7 +2386,7 @@ line-height: 30px;
 @media screen and (max-width: 600px) {
   .core-title{
     font-size: 27px!important;
-    line-height: 55px;
+    line-height: 50px;
     margin: 10px;
 
    
@@ -2619,7 +2619,7 @@ line-height: 30px;
 
 
 .fa-cogs {
-  font-size: 100px;
+  font-size: 95px;
   color: white; /* Set the initial check color as white */
   padding: 10px; /* Adjust padding for better visibility */
   border-radius: 50%; /* Make it a circular icon */
