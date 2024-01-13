@@ -1473,7 +1473,40 @@ margin-left: auto;
 margin-right: auto;
 text-align: left;
 }
+@media only screen and (max-width: 360px){
 
+  .study-story{
+   
+    width: 150%!important; 
+    margin-left: -50px!important;
+    height: 110vh!important;
+  
+  
+  }
+  .study-story-content{
+  
+     width: auto; 
+     
+     height: 110vh!important;
+   
+   
+     
+   }
+  
+
+}
+
+
+@media only screen and (max-width: 475px){
+
+
+  .timeline {
+  
+  margin-left: -30px!important;
+    
+  } 
+
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -3583,7 +3616,24 @@ input[type="checkbox"] {
   
     }
   }
-
+  @media only screen and (max-width: 360px){
+    .divider {
+      margin-top: -70px!important;
+      width:185.3%!important;
+       
+     
+   }
+  
+   .footer-para{
+    color: white;
+    margin-top: 60px;
+    
+    width: 220px;
+  
+  }
+  
+  
+  }
 
 .footer--container {
   display: flex;
