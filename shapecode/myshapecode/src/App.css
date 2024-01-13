@@ -2388,9 +2388,10 @@ line-height: 30px;
     font-size: 27px!important;
     line-height: 55px;
     margin: 10px;
-  
+
    
   }
+
   .portfolio-core-container{                                                                           
    width: 300px;
   
@@ -2421,7 +2422,7 @@ line-height: 30px;
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
   .core-title{
     color: white;
@@ -2431,15 +2432,15 @@ line-height: 30px;
     margin-bottom: 10px; 
     text-align: center!important;
     position: relative;
-    overflow: hidden; /* Hide overflowing content */
+    overflow: hidden;
     width: 120%;
     margin-left: -50px;
   
   }
 
-}
+} */
 
-@media screen and (min-width: 390px) and (max-width: 844px) { 
+/* @media screen and (min-width: 390px) and (max-width: 844px) { 
   .core-title{
     font-size: 50px;
     font-weight: 700;
@@ -2460,11 +2461,11 @@ line-height: 30px;
     margin-left: -50px;
   }
 
-}
+} */
 
 
 
-@media screen and (min-width: 360px) and (max-width: 800px) {
+/* @media screen and (min-width: 360px) and (max-width: 800px) {
   .core-title{
     font-size: 50px!important;
     font-weight: 700;
@@ -2486,13 +2487,14 @@ line-height: 30px;
  }
 
 
-}
-@media screen and (min-width: 414px) and (max-width: 896px) {
+} */
+/* @media screen and (min-width: 414px) and (max-width: 896px) {
   
   .core--section--card {
      width: 120%;
     height: 450px;
     margin-left: -50px;
+    
   }
   .core-title{
     font-size: 50px!important;
@@ -2510,7 +2512,7 @@ line-height: 30px;
   }
 
 
-}
+} */
 
 .skills--section--para {
   color: gray;
