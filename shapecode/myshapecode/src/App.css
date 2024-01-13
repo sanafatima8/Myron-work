@@ -1966,7 +1966,7 @@ text-align: left;
      width: 130%; 
      margin-left: -26px;
      margin-right: auto;
-     height: 90vh;
+     height: 130vh;
      text-align: center;
      background-image: url('..//public/img/story.jpeg');
      background-size: cover; 
@@ -3646,6 +3646,15 @@ input[type="checkbox"] {
   
   }
 
+
+  @media screen and (min-width: 414px) and (max-width: 896px) {
+
+    .divider {
+      width:167.3%!important;
+        margin-top: -70px!important;
+    }
+  }
+  
 .footer--container {
   display: flex;
   padding: 150px 85.333px; /* Adjust the padding to increase the height */
