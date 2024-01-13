@@ -1122,7 +1122,7 @@ margin-left: -80px;
   color: whitesmoke;
 margin-left: 25px;
   margin-top: 5px;
-  font-size: 13px!important;
+  font-size: 15px!important;
   font-weight: 100;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -1410,7 +1410,7 @@ margin-left: 25px;
     width: 100%; /* Make boxes take full width on mobile screens */
   }
   .box-l {
-    width: 100%; /* Make boxes take full width on mobile screens */
+    width: 100%!important; /* Make boxes take full width on mobile screens */
     margin-right: 10px;
   }
 }
