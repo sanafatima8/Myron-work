@@ -15,7 +15,7 @@ export default function MySkills() {
   return (
     <section className="core--section" id="affiliate">
     <div className="portfolio-core-container">
-  <h2 className="core-title">The Core Values that drive&nbsp;
+  <h2 className="core-maintitle">The Core Values that drive&nbsp;
   <br /><span className='core-text'>Everything</span> I do</h2>
 
 </div>
