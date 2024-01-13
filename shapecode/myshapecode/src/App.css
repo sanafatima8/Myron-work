@@ -1864,7 +1864,7 @@ text-align: left;
      width: 100%; 
      margin-left: auto;
      margin-right: auto;
-     height: auto;
+     height: 80vh;
      text-align: center;
      background-image: url('..//public/img/story.jpeg');
      background-size: cover; 
@@ -1892,7 +1892,7 @@ text-align: left;
       width: 70%; 
       margin-left: auto;
       margin-right: auto;
-      height: 60vh;
+      height: 90vh;
       text-align: center;
       position: relative;
       z-index: 1;
@@ -1935,7 +1935,7 @@ text-align: left;
 }
 
 
-@media only screen and (max-width: 327px)  {
+/* @media only screen and (max-width: 327px)  {
   .study-story{
    
      width: 170%!important; 
@@ -1955,7 +1955,7 @@ text-align: left;
     }
    
 
-}
+} */
 
 @media only screen and (max-width: 600px) {
 
@@ -1963,10 +1963,10 @@ text-align: left;
     margin-top: 100px;
      border-radius: 2rem;
     
-     width: auto; 
+     width: 130%; 
      margin-left: -26px;
      margin-right: auto;
-     height: 80vh;
+     height: 90vh;
      text-align: center;
      background-image: url('..//public/img/story.jpeg');
      background-size: cover; 
@@ -3607,15 +3607,26 @@ input[type="checkbox"] {
 } */
 
 
+
 @media only screen and (max-width: 600px){
   .divider {
-       margin-top: 100px!important;
-       width:173.3%!important;
-        
+       margin-top: -70px!important;
+       width:180.3%!important;
+       
   
   
     }
+  
+    .footer-para{
+      color: white;
+      margin-top: 60px;
+      
+      width: 220px;
+    
+    }
+    
   }
+  
   @media only screen and (max-width: 360px){
     .divider {
       margin-top: -70px!important;
