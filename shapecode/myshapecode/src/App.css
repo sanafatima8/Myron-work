@@ -1517,13 +1517,13 @@ text-align: left;
 @media only screen and (max-width: 600px) {
 
   .study-title {
-    font-size: 40px;  
-    line-height: 50px; 
+    font-size: 40px!important;  
+    line-height: 50px!important; 
   }
 
   .study-text {
-    font-size: 40px; 
-    line-height: 50px; 
+    font-size: 40px!important; 
+    line-height: 50px!important; 
   }
 
   .study--section--para {
@@ -1583,8 +1583,19 @@ text-align: left;
 
 }
 
+@media screen and (min-width: 414px) and (max-width: 896px) {
+  .study-title {
+    font-size: 40px!important;  
+    line-height: 50px!important; 
+  }
+
+  .study-text {
+    font-size: 40px!important; 
+    line-height: 50px!important; 
+  }
 
 
+}
 
 /* @media (max-width: 767px) {
   .study-title {
@@ -2439,7 +2450,7 @@ line-height: 30px;
 
 @media screen and (min-width: 360px) and (max-width: 800px) {
   .core-title{
-    font-size: 50px;
+    font-size: 50px!important;
     font-weight: 700;
     line-height: 60px;
     margin-left: -30px!important;
@@ -2447,10 +2458,10 @@ line-height: 30px;
   }
   
   .core-text {                                                                           
-    font-size: 30px;
+    font-size: 30px!important;
     font-weight: 700;
     line-height: 60px;
-    margin-left: -30px;
+    margin-left: -30px!important;
   }
   .core--section--card {
     width: 120%;
@@ -2461,8 +2472,14 @@ line-height: 30px;
 
 }
 @media screen and (min-width: 414px) and (max-width: 896px) {
+  
+  .core--section--card {
+     width: 120%;
+    height: 450px;
+    margin-left: -50px;
+  }
   .core-title{
-    font-size: 50px;
+    font-size: 50px!important;
     font-weight: 700;
     line-height: 60px;
     margin-left: -30px!important;
@@ -2470,17 +2487,11 @@ line-height: 30px;
   }
   
   .core-text {                                                                           
-    font-size: 30px;
+    font-size: 30px!important;
     font-weight: 700;
     line-height: 60px;
-    margin-left: -30px;
+    margin-left: -30px!important;
   }
-  .core--section--card {
-     width: 120%;
-    height: 450px;
-    margin-left: -50px;
-  }
-
 
 
 }
