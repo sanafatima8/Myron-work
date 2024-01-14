@@ -417,7 +417,7 @@ h2 {
     order: 1; /* Move the image to the bottom in mobile view */
     width: 70%;
     max-width: fit-content;
-    margin-left: -230px;
+    margin-left: -200px;
     float: left;
   }
 
@@ -430,8 +430,8 @@ h2 {
   
    max-width: 100%;
    float: right;
-   margin-right: -240px;
-   margin-top: -220px;
+   margin-right: -230px;
+   margin-top: -190px;
 
   }
   .hero--section--img> img,
