@@ -2,6 +2,10 @@ export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
 
+<div className="hero--section--img-mobile">
+        <img src="./img/myron beige bg 1.jpg" alt="Hero Section Mobile" />
+      </div>
+
  <div className="hero--section--img">
   <img src="./img/myron beige bg 1.jpg" alt="Hero Section" />
 </div>

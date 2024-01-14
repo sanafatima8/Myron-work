@@ -370,6 +370,15 @@ h2 {
 .hero--section--title {
  margin-top: 50px;
 }
+
+
+
+/* Default styles for larger screens */
+.hero--section--img-mobile {
+  display: none; /* Hide the image on larger screens */
+
+}
+
 /* Media Query for Mobile */
 
 @media screen and (max-width: 600px) {
@@ -383,6 +392,20 @@ h2 {
     
   }
 
+  .hero--section--img-mobile {
+    display: block; /* Show the image on mobile screens */
+ 
+  border-radius: 3rem;
+  }
+  .hero--section--img-mobile> img {
+    max-width: 70%; /* Adjust the width as needed */
+    max-height: 70vh; /* Adjust the height as needed */
+    width: auto;
+    height: auto;
+    border-radius: 3rem;
+    margin-top: 30px;
+  }
+
 }
 
 @media (max-width: 767px) {
@@ -391,15 +414,54 @@ h2 {
   }
 
   .hero--section--img {
-    order: 2; /* Move the image to the bottom in mobile view */
+    order: 1; /* Move the image to the bottom in mobile view */
+    width: 70%;
+    max-width: fit-content;
+    margin-left: -230px;
+    float: left;
   }
 
   .hero--section--content-box {
     order: 1; /* Move the content box to the top in mobile view */
   }
+  .hero--section--img-mobile {
+    order: 1; /* Keep the order of the images at the top in mobile view */
+    width: 70%; /* Make each image take up the full width in mobile view */
+  
+   max-width: 100%;
+   float: right;
+   margin-right: -240px;
+   margin-top: -220px;
+
+  }
+  .hero--section--img> img,
+  .hero--section--img-mobile> img{
+ width: 80%;
+}
+.hero--section--content-box {
+    order: 2; /* Move the content box to the top in mobile view */
+  width: 100%;
+  }
+
 
   .hero--section--title {
     margin-top: 20px; /* Adjust the margin for mobile */
+  }
+
+  .hero--section--img-mobile {
+    display: block; /* Show the image on mobile screens */
+    
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  }
+  .hero--section--img-mobile> img {
+    max-width: 70%; /* Adjust the width as needed */
+    max-height: 70vh; /* Adjust the height as needed */
+    width: auto;
+    height: auto;
+    border-radius: 3rem;
+    margin-top: 30px;
   }
 
 /* Button Styles */
