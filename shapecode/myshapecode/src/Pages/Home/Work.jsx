@@ -27,12 +27,13 @@ export default function Work() {
 
           
             <div className='am-icon'>
-      <lord-icon
+            <img src="../img/Ambition.svg " alt="" />
+      {/* <lord-icon
         src="https://cdn.lordicon.com/nchegqgo.json"
         trigger="hover"
         colors="primary:#fff,secondary:#c79816"
         style={{ width: '100px', height: '100px' }}
-      />
+      /> */}
     </div>
 
 
@@ -47,12 +48,13 @@ export default function Work() {
             </p>
 
  <div className="pur-icon">   
-<lord-icon
+ <img src="../img/Purpose.svg " alt="" />
+{/* <lord-icon
     src="https://cdn.lordicon.com/wdwmyold.json"
     trigger="hover"
     colors="primary:#c79816,secondary:#ffffff"
     style={{ width: '100px', height: '100px' }}
-/>
+/> */}
 </div>
             
 
